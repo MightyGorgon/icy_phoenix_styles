@@ -1,0 +1,31 @@
+@import url("../common/common.css");
+@import url("../common/common_dropdown.css");
+@import url("../common/common_colors.css");
+@import url("../common/fap.css");
+@import url("common.css");
+@import url("style_blue_colors.css");
+@import url("style_blue.css");
+
+body { background: #dd2222 url('images/blue/xmas/bg_xmas.png') top left repeat; }
+
+#wrapper { background-image: url('images/blue/xmas/bg/bg_b_l.gif'); }
+#wrapper1 { background-image: url('images/blue/xmas/bg/bg_b_r.gif'); }
+#wrapper2 { background-image: url('images/blue/xmas/bg/bg_h_c.gif'); }
+#wrapper3 { background-image: url('images/blue/xmas/bg/bg_h_l.gif'); }
+#wrapper4 { background-image: url('images/blue/xmas/bg/bg_h_r.gif'); }
+#wrapper5 { background-image: url('images/blue/xmas/bg/bg_f_c.gif'); }
+#wrapper6 { background-image: url('images/blue/xmas/bg/bg_f_l.gif'); }
+#wrapper7 { background-image: url('images/blue/xmas/bg/bg_f_r.gif'); }
+
+/*
+#forumtable { background: url('./images/blue/xmas/bg_snowflakes.gif') repeat; }
+*/
+
+.forabg { background-image: url("images/blue/xmas/bg_list.gif"); }
+
+/*
+.forumbg { background-image: url("images/blue/xmas/bg_header.gif"); }
+.headerbar { background-image: url("images/blue/xmas/bg_header.gif"); }
+ */
+
+
