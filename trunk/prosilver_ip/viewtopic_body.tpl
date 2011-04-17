@@ -137,7 +137,7 @@
 			<dd>{postrow.POSTER_FROM}</dd>
 			<dd>{postrow.POSTER_POSTS}</dd>
 			<!-- IF postrow.POSTER_THANKS_RECEIVED --><dd>{postrow.POSTER_THANKS_RECEIVED}</dd><!-- ENDIF -->
-			<!-- IF postrow.FEEDBACKS --><dd>{postrow.FEEDBACKS}</dd><!-- ENDIF -->
+			<!-- IF postrow.FEEDBACK --><dd>{postrow.FEEDBACK}</dd><!-- ENDIF -->
 			<!-- BEGIN switch_poster_info -->
 			<dd>
 			{postrow.CASH}<br />
