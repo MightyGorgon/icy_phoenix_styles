@@ -53,7 +53,7 @@
 					</tr>
 					<tr>
 						<td class="row2"><b><span class="genmed">{L_SOCIAL_NETWORKS}</span></b></td>
-						<td class="row1 post-buttons"><span class="genmed">&nbsp;<!-- IF S_LOGGED_IN and ICON_CHAT -->&nbsp;{ICON_CHAT}<!-- ENDIF --><!-- IF ICON_FACEBOOK -->&nbsp;{ICON_FACEBOOK}<!-- ENDIF --><!-- IF ICON_JABBER -->&nbsp;{ICON_JABBER}<!-- ENDIF --><!-- IF ICON_TWITTER -->&nbsp;{ICON_TWITTER}<!-- ENDIF -->&nbsp;</span></td>
+						<td class="row1 post-buttons"><span class="genmed">&nbsp;<!-- IF S_LOGGED_IN and ICON_CHAT -->&nbsp;{ICON_CHAT}<!-- ENDIF --><!-- IF ICON_FACEBOOK -->&nbsp;{ICON_FACEBOOK}<!-- ENDIF --><!-- IF ICON_FLICKR -->&nbsp;{ICON_FLICKR}<!-- ENDIF --><!-- IF ICON_GOOGLEPLUS -->&nbsp;{ICON_GOOGLEPLUS}<!-- ENDIF --><!-- IF ICON_JABBER -->&nbsp;{ICON_JABBER}<!-- ENDIF --><!-- IF ICON_LINKEDIN -->&nbsp;{ICON_LINKEDIN}<!-- ENDIF --><!-- IF ICON_TWITTER -->&nbsp;{ICON_TWITTER}<!-- ENDIF --><!-- IF ICON_YOUTUBE -->&nbsp;{ICON_YOUTUBE}<!-- ENDIF -->&nbsp;</span></td>
 					</tr>
 					<!-- BEGIN custom_contact -->
 					<tr>{custom_contact.CONTACT}</tr>
