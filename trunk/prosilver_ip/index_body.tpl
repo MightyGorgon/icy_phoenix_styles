@@ -109,7 +109,7 @@ if(GetCookie(tmp) == '2')
 			<!-- BEGIN switch_ac_online -->
 			{AC_LIST_TEXT}&nbsp;{AC_LIST}&nbsp;[&nbsp;<a href="{U_AJAX_SHOUTBOX_PP}" target="_blank">{L_AJAX_SHOUTBOX}</a>&nbsp;]<br />
 			<!-- END switch_ac_online -->
-			{L_USERS_TODAY}{L_USERS_LASTHOUR} ({L_Online_today})<br />{ADMINS_TODAY_LIST}<br />{MODS_TODAY_LIST}<br />{USERS_TODAY_LIST}<br /><b>{L_LEGEND}:</b>{GROUPS_LIST_LEGEND}
+			{L_USERS_TODAY}{L_USERS_LASTHOUR} ({L_ONLINE_TODAY})<br />{ADMINS_TODAY_LIST}<br />{MODS_TODAY_LIST}<br />{USERS_TODAY_LIST}<br /><b>{L_LEGEND}:</b>{GROUPS_LIST_LEGEND}
 		</div>
 		</li>
 	</ul>
