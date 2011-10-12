@@ -16,7 +16,7 @@
 	<ul class="linklist">
 		<li style="text-align: left;">
 			<!-- IF S_LOGGED_IN --><a href="{FULL_SITE_PATH}{U_PROFILE}" title="{L_PROFILE}" class="icon-ucp">{L_PROFILE}</a> (<a href="{FULL_SITE_PATH}{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a>)<br /><!-- ENDIF -->
-			<span style="font-size: 0.8em;"><!-- IF S_BREADCRUMBS_LINKS_LEFT -->{BREADCRUMBS_LINKS_LEFT}<br /><!-- ENDIF -->{CURRENT_TIME}</span>
+			<span style="font-size: 0.8em;"><!-- IF S_BREADCRUMBS_BOTTOM_LEFT_LINKS -->{BREADCRUMBS_BOTTOM_LEFT_LINKS}<br /><!-- ENDIF -->{CURRENT_TIME}</span>
 		</li>
 		<li class="rightside">
 			<a href="{FULL_SITE_PATH}{U_INDEX}" class="icon-ucp">{L_FORUM}</a>&nbsp;
@@ -27,7 +27,7 @@
 			<a href="{FULL_SITE_PATH}{U_REGISTER}" class="icon-register">{L_REGISTER}</a>&nbsp;
 			<!-- ENDIF -->
 			<a href="{FULL_SITE_PATH}{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" class="icon-logout">{L_LOGIN_LOGOUT}</a>
-			<!-- IF S_BREADCRUMBS_LINKS_RIGHT --><br />{BREADCRUMBS_LINKS_RIGHT}<!-- ENDIF -->
+			<!-- IF S_BREADCRUMBS_BOTTOM_RIGHT_LINKS --><br />{BREADCRUMBS_BOTTOM_RIGHT_LINKS}<!-- ENDIF -->
 		</li>
 	</ul>
 

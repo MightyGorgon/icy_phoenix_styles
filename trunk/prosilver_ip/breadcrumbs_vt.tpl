@@ -16,7 +16,7 @@
 	<ul class="linklist">
 		<li style="text-align: left;">
 			<!-- IF S_LOGGED_IN --><a href="{FULL_SITE_PATH}{U_PROFILE}" title="{L_PROFILE}" class="icon-ucp">{L_PROFILE}</a> (<a href="{FULL_SITE_PATH}{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a>)<br /><!-- ENDIF -->
-			<span style="font-size: 0.8em;"><!-- IF S_BREADCRUMBS_LINKS_LEFT -->{BREADCRUMBS_LINKS_LEFT}<br /><!-- ENDIF -->{CURRENT_TIME}</span>
+			<span style="font-size: 0.8em;"><!-- IF S_BREADCRUMBS_BOTTOM_LEFT_LINKS -->{BREADCRUMBS_BOTTOM_LEFT_LINKS}<br /><!-- ENDIF -->{CURRENT_TIME}</span>
 		</li>
 		<li class="rightside">
 			<a href="{FULL_SITE_PATH}{U_INDEX}" title="{L_FORUM}" class="icon-ucp">{L_FORUM}</a>&nbsp;

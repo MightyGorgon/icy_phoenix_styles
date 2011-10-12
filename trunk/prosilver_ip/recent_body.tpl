@@ -32,11 +32,11 @@
 	<td class="{recent.ROW_CLASS}h{recent.CLASS_NEW} row-forum" style="background: none; cursor: pointer;" onclick="window.location.href='{recent.U_VIEW_TOPIC}'">
 		<span class="topiclink{recent.CLASS_NEW}">{recent.NEWEST_POST_IMG}{recent.TOPIC_ATTACHMENT_IMG}{recent.L_NEWS}{recent.TOPIC_TYPE}<a href="{recent.U_VIEW_TOPIC}" class="{recent.TOPIC_CLASS}">{recent.TOPIC_TITLE}</a></span>
 		<div style="float: right; display: block; height: auto; vertical-align: top; margin-top: 0px !important; padding-top: 0px !important; padding-right: 3px;">{recent.GOTO_PAGE_FULL}</div>
-		<div class="gensmall" style="padding-top: 5px;">{recent.FIRST_AUTHOR}&nbsp;&bull;&nbsp;{recent.FIRST_TIME}</div>
+		<div class="gensmall" style="padding-top: 5px;">{recent.FIRST_AUTHOR}&nbsp;&bull;&nbsp;{recent.FIRST_POST_TIME}</div>
 	</td>
 	<td class="{recent.ROW_CLASS} row-center-small" style="background: none;">{recent.VIEWS}</td>
 	<td class="{recent.ROW_CLASS} row-center-small" style="background: none;">{recent.REPLIES}</td>
-	<td class="{recent.ROW_CLASS} row-center-small" style="padding-top: 0; padding-left: 2px; padding-right: 2px; background: none;" nowrap="nowrap">{recent.LAST_TIME}<br />{recent.LAST_AUTHOR}&nbsp;{recent.LAST_URL}</td>
+	<td class="{recent.ROW_CLASS} row-center-small" style="padding-top: 0; padding-left: 2px; padding-right: 2px; background: none;" nowrap="nowrap">{recent.LAST_POST_TIME}<br />{recent.LAST_AUTHOR}&nbsp;{recent.LAST_URL}</td>
 </tr>
 <!-- END recent -->
 <!-- BEGIN switch_no_topics -->
