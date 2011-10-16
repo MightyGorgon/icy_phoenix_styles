@@ -124,14 +124,18 @@
 				{postrow.POSTER_FROM_FLAG}&nbsp;{postrow.POSTER_NAME}&nbsp;{postrow.POSTER_GENDER}
 			</dt>
 			<dd>
+			<!-- IF not S_BOT -->
 			{postrow.USER_RANK_01}{postrow.USER_RANK_01_IMG}
 			{postrow.USER_RANK_02}{postrow.USER_RANK_02_IMG}
 			{postrow.USER_RANK_03}{postrow.USER_RANK_03_IMG}
 			{postrow.USER_RANK_04}{postrow.USER_RANK_04_IMG}
 			{postrow.USER_RANK_05}{postrow.USER_RANK_05_IMG}
+			<!-- ELSE -->
+			&nbsp;
+			<!-- ENDIF -->
 			</dd>
 			<dd>&nbsp;</dd>
-			<dd>{postrow.CARD_IMG}</dd>
+			<!-- IF not S_BOT --><dd>{postrow.CARD_IMG}</dd><!-- ENDIF -->
 			<!-- IF postrow.POSTER_AGE --><dd>{postrow.POSTER_AGE}</dd><!-- ENDIF -->
 			<dd>{postrow.POSTER_JOINED}</dd>
 			<dd>{postrow.POSTER_FROM}</dd>

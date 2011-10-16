@@ -19,9 +19,11 @@
 <tr>
 	<td class="row-post-author" nowrap="nowrap">
 		<span class="post-name"><a name="p{postrow.U_POST_ID}"></a>{postrow.POSTER_NAME}</span><br />
+		<!-- IF not S_BOT -->
 		<div class="post-rank">
 			<div class="center-block-text"><b>{postrow.USER_RANK_01}{postrow.USER_RANK_01_IMG}{postrow.USER_RANK_02}{postrow.USER_RANK_02_IMG}{postrow.USER_RANK_03}{postrow.USER_RANK_03_IMG}{postrow.USER_RANK_04}{postrow.USER_RANK_04_IMG}{postrow.USER_RANK_05}{postrow.USER_RANK_05_IMG}</b></div>
 		</div>
+		<!-- ENDIF -->
 		<span class="post-images">{postrow.POSTER_AVATAR}</span>
 		<div class="post-details">
 			{postrow.POSTER_JOINED}<br />
@@ -49,7 +51,7 @@
 		<div style="float: right;">
 		<ul class="profile-icons">
 			<!-- IF postrow.QUOTE_URL --><li class="quote-icon"><a href="{postrow.QUOTE_URL}" target="_parent"><span>{L_POST_QUOTE}</span></a></li><!-- ENDIF -->
-			<li class="postdownload-icon"><a href="{postrow.DOWNLOAD_POST}" target="_parent"><span>{L_DOWNLOAD_POST}</span></a></li>
+			<li class="postdownload-icon"><!-- IF not S_BOT --><a href="{postrow.DOWNLOAD_POST}" target="_parent"><span>{L_DOWNLOAD_POST}</span></a><!-- ELSE -->&nbsp;<!-- ENDIF --></li>
 		</ul>
 		</div>
 		<div class="post-subject"><a href="{postrow.U_MINI_POST}"><img src="{postrow.MINI_POST_IMG}" alt="{postrow.L_MINI_POST_ALT}" title="{postrow.L_MINI_POST_ALT}" /></a> {postrow.POST_SUBJECT}&nbsp;</div>
