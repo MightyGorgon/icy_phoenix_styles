@@ -40,7 +40,7 @@ if(GetCookie(tmp) == '2')
 {IMG_THL_ALT}{IMG_THC}<img class="max-min-right" style="{SHOW_HIDE_PADDING}" src="{IMG_MINIMISE}" onclick="ShowHide('{catrow.MAIN_CAT_ID}_f','{catrow.MAIN_CAT_ID}_f_h','{catrow.MAIN_CAT_ID}_f');" alt="{L_HIDE}" /><span class="forumlink">{catrow.tablehead.L_FORUM}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
 <!-- BEGIN cathead -->
 <tr>
-	<!-- BEGIN inc --><td width="46" class="{catrow.cathead.inc.INC_CLASS}"><img src="{SPACER}" width="46" height="0" /></td><!-- END inc -->
+	<!-- BEGIN inc --><td width="37" class="{catrow.cathead.inc.INC_CLASS}"><img src="{SPACER}" width="37" height="0" /></td><!-- END inc -->
 	<td class="{catrow.cathead.CLASS_CAT}" width="100%" colspan="{catrow.cathead.INC_SPAN}"><span class="cattitle"><a href="{catrow.cathead.U_VIEWCAT}" class="cattitle" title="{catrow.cathead.CAT_DESC}">{catrow.cathead.CAT_TITLE}</a></span></td>
 	<td class="{catrow.cathead.CLASS_ROWPIC}" colspan="3" align="right">&nbsp;</td>
 </tr>
@@ -57,7 +57,7 @@ if (ereg("c=", $_SERVER['REQUEST_URI']) || ereg("-vc", $_SERVER['REQUEST_URI']))
 ?>
 <!-- BEGIN cathead -->
 <tr>
-	<!-- BEGIN inc --><td width="30" class="{catrow.cathead.inc.INC_CLASS}"><img src="{SPACER}" width="46" height="0" /></td><!-- END inc -->
+	<!-- BEGIN inc --><td width="37" class="{catrow.cathead.inc.INC_CLASS}"><img src="{SPACER}" width="37" height="0" /></td><!-- END inc -->
 	<td class="forum-buttons2" colspan="6" align="left"><img src="{CAT_BLOCK_IMG}" style="vertical-align: middle;" />&nbsp;<a href="{catrow.cathead.U_VIEWCAT}" title="{catrow.cathead.CAT_DESC}">{catrow.cathead.CAT_TITLE}</a></td>
 </tr>
 <!-- END cathead -->
@@ -66,7 +66,7 @@ if (ereg("c=", $_SERVER['REQUEST_URI']) || ereg("-vc", $_SERVER['REQUEST_URI']))
 ?>
 <!-- BEGIN forumrow -->
 <tr class="row1h{catrow.forumrow.LINK_CLASS} row-forum">
-	<!-- BEGIN inc --><td width="46" class="{catrow.forumrow.inc.INC_CLASS}"{catrow.forumrow.LINKS_ROWSPAN}><img src="{SPACER}" width="46" height="0" alt="" /></td><!-- END inc -->
+	<!-- BEGIN inc --><td width="37" class="{catrow.forumrow.inc.INC_CLASS}"{catrow.forumrow.LINKS_ROWSPAN}><img src="{SPACER}" width="37" height="0" alt="" /></td><!-- END inc -->
 	<td class="row1" style="padding-left: 1px; padding-right: 3px; vertical-align: middle; min-height: 50px; background: none;" width="37" height="50"{catrow.forumrow.LINKS_ROWSPAN}>{catrow.forumrow.U_MARK_ALWAYS_READ}</td>
 	<td class="row1" style="background: none; cursor: pointer;" width="100%" colspan="{catrow.forumrow.INC_SPAN}" onclick="window.location.href='{catrow.forumrow.U_VIEWFORUM}'">
 		<table width="100%" cellspacing="0" cellpadding="2" border="0">
