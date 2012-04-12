@@ -131,7 +131,7 @@
 					<tr><th colspan="2"><span class="genmed"><b>{L_INVISION_P_DETAILS}</b></span></th></tr>
 					<tr>
 						<td width="33%" class="row2"><b><span class="genmed">{L_INVISION_POSTS}</span></b></td>
-						<td width="64%" class="row1"><span class="genmed"><b>{POSTS}</b>&nbsp;{INVISION_POST_PERCENT_STATS}</span></td>
+						<td width="64%" class="row1"><span class="genmed"><b>{POSTS}</b>&nbsp;-&nbsp;{INVISION_POST_PERCENT_STATS}</span></td>
 					</tr>
 					<!-- IF S_POSTS_SECTION -->
 					<tr>
