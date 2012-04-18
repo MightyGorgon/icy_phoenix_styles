@@ -48,7 +48,7 @@ function attach_rules(forum_id)
 <!-- BEGIN switch_prv_msg_review -->
 <table class="forumline" width="100%" cellspacing="0">
 <tr><td class="row-header" colspan="2"><span>{switch_prv_msg_review.PRIVATE_MSG_TITLE}</span></td></tr>
-<tr><td align="left" valign="top" colspan="2" width="65%" class="row2"><div class="post-text post-text-hide-flow">{switch_prv_msg_review.PRIVATE_MSG_REVIEW}</div></td></tr>
+<tr><td align="left" valign="top" colspan="2" width="65%" class="row2"><div class="post-text post-text-hide-flow">{switch_prv_msg_review.MESSAGE}</div></td></tr>
 </table>
 <!-- END switch_prv_msg_review -->
 
