@@ -4,7 +4,7 @@
 global $user, $config, $is_auth, $lang, $to_username, $privmsgs_id, $post_subject, $images, $privmsg;
 $post_subject = (((strlen($post_subject) > 0) && ((substr($post_subject, 0, strlen($lang['REPLY_PREFIX'])) == $lang['REPLY_PREFIX']) || (substr($post_subject, 0, strlen($lang['REPLY_PREFIX'])) == $lang['REPLY_PREFIX_OLD']))) ? '' : $lang['REPLY_PREFIX']) . $post_subject;
 $this->vars['qr_subject'] = $post_subject;
-$this->vars['CA_QUICK_REPLY_BUTTON'] = '<a href="#" onclick="ShowHide(\'quick_reply\', \'quick_reply2\'); return false;"><img src="' . $images['quick_reply'] . '" alt="' . $lang['Post_a_reply'] . '" /></a><a href="#quick"></a>';
+$this->vars['CA_QUICK_REPLY_BUTTON'] = '<a href="#" onclick="showQuickEditor(); return false;" title="' . $lang['Post_a_reply'] . '"><img src="' . $images['quick_reply'] . '" alt="' . $lang['Post_a_reply'] . '" /></a><a href="#quick"></a>';
 $this->vars['privmsgs_id'] = $privmsgs_id;
 
 ob_start();
@@ -95,7 +95,7 @@ message[{privmsgs_id}] = " user=\"{RECIPIENT_QQ}\"]{PLAIN_MESSAGE}[/";
 <form method="post" action="{S_PRIVMSGS_ACTION}">
 {S_HIDDEN_FIELDS}
 
-<!-- IF REPLY_PM_URL --><div class="buttons"><div class="pmreply-button"><a href="{REPLY_PM_URL}"><span>{L_REPLY_PM}</span></a></div><div class="quickreply-button"><a href="javascript:ShowHide(%27quick_reply%27,%27quick_reply2%27);"><span>{L_QUICK_REPLY}</span></a></div></div><!-- ENDIF -->
+<!-- IF REPLY_PM_URL --><div class="buttons"><div class="pmreply-button"><a href="{REPLY_PM_URL}"><span>{L_REPLY_PM}</span></a></div><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div></div><!-- ENDIF -->
 <br clear="all" />
 {IMG_THL}{IMG_THC}<span class="forumlink">{POST_SUBJECT}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
 	<tr>
@@ -173,7 +173,7 @@ message[{privmsgs_id}] = " user=\"{RECIPIENT_QQ}\"]{PLAIN_MESSAGE}[/";
 
 <table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
 <tr>
-	<td align="left"><!-- IF REPLY_PM_URL --><div class="buttons"><div class="pmreply-button"><a href="{REPLY_PM_URL}"><span>{L_REPLY_PM}</span></a></div><div class="quickreply-button"><a href="javascript:ShowHide(%27quick_reply%27,%27quick_reply2%27);"><span>{L_QUICK_REPLY}</span></a></div></div><!-- ELSE -->&nbsp;<!-- ENDIF --></td>
+	<td align="left"><!-- IF REPLY_PM_URL --><div class="buttons"><div class="pmreply-button"><a href="{REPLY_PM_URL}"><span>{L_REPLY_PM}</span></a></div><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div></div><!-- ELSE -->&nbsp;<!-- ENDIF --></td>
 	<td align="right" valign="top" nowrap="nowrap">
 		<span class="gensmall">{S_TIMEZONE}</span>
 	</td>
