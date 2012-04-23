@@ -277,7 +277,7 @@ if(GetCookie(tmp) == '2')
 		<div class="newtopic-button"><a href="{U_POST_NEW_TOPIC}"><span>{L_POST_NEW_TOPIC}</span></a></div>
 		<!-- IF IS_LOCKED --><div class="locked-button"><!-- ELSE --><div class="postreply-button"><!-- ENDIF --><a href="{U_POST_REPLY_TOPIC}"><span>{L_POST_REPLY_TOPIC}</span></a></div>
 		<!-- IF S_THANKS --><div class="thanks-button"><a href="{U_THANKS}"><span>{L_THANKS}</span></a></div><!-- ENDIF -->
-		<!-- IF S_CAN_REPLY --><div class="quickreply-button"><a href="javascript:ShowHide(%27quick_reply%27,%27quick_reply2%27);"><span>{L_QUICK_REPLY}</span></a></div><!-- ENDIF -->
+		<!-- IF S_CAN_REPLY --><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div><!-- ENDIF -->
 		<!-- ELSE -->
 		&nbsp;
 		<!-- ENDIF -->
