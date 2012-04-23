@@ -193,7 +193,9 @@
 			<!-- IF recent_pics_block.recent_pics.recent_detail.COMMENTS --> 
 			{recent_pics_block.recent_pics.recent_detail.COMMENTS}<br />
 			<!-- ENDIF -->
-			{recent_pics_block.recent_pics.recent_detail.IP}
+			<!-- IF recent_pics_block.recent_pics.recent_detail.IP --> 
+			{recent_pics_block.recent_pics.recent_detail.IP}<br />
+			<!-- ENDIF -->
 		</span>
 	</td>
 	<!-- END recent_detail -->
@@ -236,7 +238,9 @@
 			<!-- IF mostviewed_pics_block.mostviewed_pics.mostviewed_detail.COMMENTS --> 
 			{mostviewed_pics_block.mostviewed_pics.mostviewed_detail.COMMENTS}<br />
 			<!-- ENDIF -->
-			{mostviewed_pics_block.mostviewed_pics.mostviewed_detail.IP}
+			<!-- IF mostviewed_pics_block.mostviewed_pics.mostviewed_detail.IP --> 
+			{mostviewed_pics_block.mostviewed_pics.mostviewed_detail.IP}<br />
+			<!-- ENDIF -->
 		</span>
 	</td>
 <!-- END mostviewed_detail -->

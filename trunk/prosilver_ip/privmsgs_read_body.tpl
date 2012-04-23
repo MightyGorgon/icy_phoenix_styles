@@ -11,7 +11,7 @@ ob_start();
 ?>
 <div id="quick_reply" style="display: none; position: relative; ">
 <a name="quick"></a>
-<form method="post" action="{S_PRIVMSGS_ACTION}&amp;p={PM_ID}" name="post">
+<form method="post" action="{S_PRIVMSGS_ACTION}&amp;{POST_POST_URL}={PM_ID}" name="post">
 {S_HIDDEN_FIELDS}
 <input type="hidden" name="post_time" value="<?php echo time(); ?>" />
 {IMG_THL}{IMG_THC}<span class="forumlink"><?php echo $lang['Post_a_reply']; ?></span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
@@ -174,9 +174,7 @@ message[{privmsgs_id}] = " user=\"{RECIPIENT_QQ}\"]{PLAIN_MESSAGE}[/";
 <table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
 <tr>
 	<td align="left"><!-- IF REPLY_PM_URL --><div class="buttons"><div class="pmreply-button"><a href="{REPLY_PM_URL}"><span>{L_REPLY_PM}</span></a></div><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div></div><!-- ELSE -->&nbsp;<!-- ENDIF --></td>
-	<td align="right" valign="top" nowrap="nowrap">
-		<span class="gensmall">{S_TIMEZONE}</span>
-	</td>
+	<td align="right" valign="top" nowrap="nowrap"><span class="gensmall">{S_TIMEZONE}</span></td>
 </tr>
 </table>
 </form>
