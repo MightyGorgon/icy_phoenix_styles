@@ -120,6 +120,7 @@ $tpl_lang_img_xmas_path = 'images/' . $style_config['color'] . '/' . $tpl_xmas_p
 .offline-icon, .offline-icon a,
 .hidden-icon, .hidden-icon a,
 
+.chat-icon, .chat-icon a,
 .aim-icon, .aim-icon a,
 .icq-icon, .icq-icon a,
 .jabber-icon, .jabber-icon a,
@@ -150,6 +151,7 @@ ul.profile-icons li.online-icon,
 ul.profile-icons li.offline-icon,
 ul.profile-icons li.hidden-icon,
 
+ul.profile-icons li.chat-icon,
 ul.profile-icons li.aim-icon,
 ul.profile-icons li.icq-icon,
 ul.profile-icons li.jabber-icon,
@@ -221,6 +223,7 @@ ul.profile-icons li.yahoo-icon
 .offline-icon, .offline-icon a { background-image: url("<?php echo($tpl_img_path); ?>icon_user_offline.gif"); }
 .hidden-icon, .hidden-icon a { background-image: url("<?php echo($tpl_img_path); ?>icon_user_hidden.gif"); }
 
+.chat-icon, .chat-icon a { background-image: url("<?php echo($tpl_img_path); ?>icon_im_chat.png"); }
 .aim-icon, .aim-icon a { background-image: url("<?php echo($tpl_img_path); ?>icon_im_aim.gif"); }
 .icq-icon, .icq-icon a { background-image: url("<?php echo($tpl_img_path); ?>icon_im_icq.gif"); }
 .jabber-icon, .jabber-icon a { background-image: url("<?php echo($tpl_img_path); ?>icon_im_jabber.gif"); }
