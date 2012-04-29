@@ -42,18 +42,20 @@
 						<td class="row1 post-buttons"><span class="gensmall"><a href="{U_FRIEND_ADD_REMOVE}" class="gensmall"><!-- IF IS_FRIEND -->{L_FRIEND_REMOVE}<!-- ELSE -->{L_FRIEND_ADD}<!-- ENDIF --></a></span></td>
 					</tr>
 					<!-- ENDIF -->
+					<!-- IF ICON_CHAT -->
 					<tr>
 						<td class="row2" valign="top"><b><span class="genmed">{L_AJAX_SHOUTBOX_PVT}</span></b></td>
-						<td class="row1 post-buttons"><span class="gensmall"><a href="#" class="gensmall" onclick="window.open('{U_AJAX_SHOUTBOX_PVT_LINK}', '_chat', 'width=720,height=600,resizable=yes'); return false;">{L_AJAX_SHOUTBOX_PVT_LINK}</a></span></td>
+						<td class="row1 post-buttons"><span class="gensmall"><a href="{U_AJAX_SHOUTBOX_PVT_LINK}">{L_AJAX_SHOUTBOX_PVT_LINK}</a></span></td>
 					</tr>
+					<!-- ENDIF ICON_CHAT -->
 					<!-- ENDIF -->
 					<tr>
 						<td class="row2"><b><span class="genmed">{L_INVISION_COMMUNICATE}</span></b></td>
-						<td class="row1 post-buttons"><!-- IF U_AIM or U_ICQ or U_MSN or U_SKYPE or U_YIM --><ul class="profile-icons" style="padding-left: 10px;"><!-- IF U_AIM --><li class="aim-icon"><a href="{U_AIM}"><span>{L_AIM}</span></a></li><!-- ENDIF --><!-- IF U_ICQ --><li class="icq-icon"><a href="{U_ICQ}"><span>{L_ICQ_NUMBER}</span></a></li><!-- ENDIF --><!-- IF U_MSN --><li class="msn-icon"><a href="{U_MSN}"><span>{L_MESSENGER}</span></a></li><!-- ENDIF --><!-- IF U_SKYPE --><li class="skype-icon"><a href="{U_SKYPE}"><span>{L_SKYPE}</span></a></li><!-- ENDIF --><!-- IF U_YIM --><li class="yahoo-icon"><a href="{U_YIM}"><span>{L_YAHOO}</span></a></li><!-- ENDIF --></ul><!-- ELSE -->&nbsp;<!-- ENDIF --></td>
+						<td class="row1 post-buttons"><!-- IF U_CHAT or U_AIM or U_ICQ or U_MSN or U_SKYPE or U_YIM --><ul class="profile-icons" style="padding-left: 10px;"><!-- IF U_CHAT --><li class="chat-icon"><a href="{U_CHAT}"><span>{L_CHAT}</span></a></li><!-- ENDIF --><!-- IF U_AIM --><li class="aim-icon"><a href="{U_AIM}"><span>{L_AIM}</span></a></li><!-- ENDIF --><!-- IF U_ICQ --><li class="icq-icon"><a href="{U_ICQ}"><span>{L_ICQ_NUMBER}</span></a></li><!-- ENDIF --><!-- IF U_MSN --><li class="msn-icon"><a href="{U_MSN}"><span>{L_MESSENGER}</span></a></li><!-- ENDIF --><!-- IF U_SKYPE --><li class="skype-icon"><a href="{U_SKYPE}"><span>{L_SKYPE}</span></a></li><!-- ENDIF --><!-- IF U_YIM --><li class="yahoo-icon"><a href="{U_YIM}"><span>{L_YAHOO}</span></a></li><!-- ENDIF --></ul><!-- ELSE -->&nbsp;<!-- ENDIF --></td>
 					</tr>
 					<tr>
 						<td class="row2"><b><span class="genmed">{L_SOCIAL_NETWORKS}</span></b></td>
-						<td class="row1 post-buttons"><span class="genmed">&nbsp;<!-- IF S_LOGGED_IN and ICON_CHAT -->&nbsp;{ICON_CHAT}<!-- ENDIF --><!-- IF ICON_FACEBOOK -->&nbsp;{ICON_FACEBOOK}<!-- ENDIF --><!-- IF ICON_FLICKR -->&nbsp;{ICON_FLICKR}<!-- ENDIF --><!-- IF ICON_GOOGLEPLUS -->&nbsp;{ICON_GOOGLEPLUS}<!-- ENDIF --><!-- IF ICON_JABBER -->&nbsp;{ICON_JABBER}<!-- ENDIF --><!-- IF ICON_LINKEDIN -->&nbsp;{ICON_LINKEDIN}<!-- ENDIF --><!-- IF ICON_TWITTER -->&nbsp;{ICON_TWITTER}<!-- ENDIF --><!-- IF ICON_YOUTUBE -->&nbsp;{ICON_YOUTUBE}<!-- ENDIF -->&nbsp;</span></td>
+						<td class="row1 post-buttons"><span class="genmed">&nbsp;<!-- IF ICON_FACEBOOK -->&nbsp;{ICON_FACEBOOK}<!-- ENDIF --><!-- IF ICON_FLICKR -->&nbsp;{ICON_FLICKR}<!-- ENDIF --><!-- IF ICON_GOOGLEPLUS -->&nbsp;{ICON_GOOGLEPLUS}<!-- ENDIF --><!-- IF ICON_JABBER -->&nbsp;{ICON_JABBER}<!-- ENDIF --><!-- IF ICON_LINKEDIN -->&nbsp;{ICON_LINKEDIN}<!-- ENDIF --><!-- IF ICON_TWITTER -->&nbsp;{ICON_TWITTER}<!-- ENDIF --><!-- IF ICON_YOUTUBE -->&nbsp;{ICON_YOUTUBE}<!-- ENDIF -->&nbsp;</span></td>
 					</tr>
 					<!-- BEGIN custom_contact -->
 					<tr>{custom_contact.CONTACT}</tr>
