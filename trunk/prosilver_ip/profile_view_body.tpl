@@ -42,10 +42,12 @@
 						<td class="row1 post-buttons"><span class="gensmall"><a href="{U_FRIEND_ADD_REMOVE}" class="gensmall"><!-- IF IS_FRIEND -->{L_FRIEND_REMOVE}<!-- ELSE -->{L_FRIEND_ADD}<!-- ENDIF --></a></span></td>
 					</tr>
 					<!-- ENDIF -->
+					<!-- IF ICON_CHAT -->
 					<tr>
 						<td class="row2" valign="top"><b><span class="genmed">{L_AJAX_SHOUTBOX_PVT}</span></b></td>
-						<td class="row1 post-buttons"><span class="gensmall"><a href="#" class="gensmall" onclick="window.open('{U_AJAX_SHOUTBOX_PVT_LINK}', '_chat', 'width=720,height=600,resizable=yes'); return false;">{L_AJAX_SHOUTBOX_PVT_LINK}</a></span></td>
+						<td class="row1 post-buttons"><span class="gensmall"><a href="{U_AJAX_SHOUTBOX_PVT_LINK}">{L_AJAX_SHOUTBOX_PVT_LINK}</a></span></td>
 					</tr>
+					<!-- ENDIF -->
 					<!-- ENDIF -->
 					<tr>
 						<td class="row2"><b><span class="genmed">{L_INVISION_COMMUNICATE}</span></b></td>

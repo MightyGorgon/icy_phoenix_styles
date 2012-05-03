@@ -107,7 +107,7 @@ if(GetCookie(tmp) == '2')
 			<div class="avatar-box"><span class="genmed">{L_WELCOME}</span><br /><span class="genmed">{USER_NAME}</span><br /><br /><div class="center-block">{AVATAR_IMG}</div></div>
 			{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{LOGGED_IN_USER_LIST}<br />{BOT_LIST}<br />
 			<!-- BEGIN switch_ac_online -->
-			{AC_LIST_TEXT}&nbsp;{AC_LIST}&nbsp;[&nbsp;<a href="{U_AJAX_SHOUTBOX_PP}" target="_blank">{L_AJAX_SHOUTBOX}</a>&nbsp;]<br />
+			{AC_LIST_TEXT}&nbsp;{AC_LIST}&nbsp;[&nbsp;<a href="{U_AJAX_SHOUTBOX}" target="_blank">{L_AJAX_SHOUTBOX}</a>&nbsp;]<br />
 			<!-- END switch_ac_online -->
 			{L_USERS_TODAY}{L_USERS_LASTHOUR} ({L_ONLINE_TODAY})<br />{ADMINS_TODAY_LIST}<br />{MODS_TODAY_LIST}<br />{USERS_TODAY_LIST}<br /><b>{L_LEGEND}:</b>{GROUPS_LIST_LEGEND}
 		</div>
