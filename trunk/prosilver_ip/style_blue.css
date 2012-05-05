@@ -491,6 +491,10 @@ hr.dashed {
 .post-msg .row2 { background-color: #e1ebf2; }
 .post-msg .row3 { background-color: #cadceb; }
 
+.post-msg-bg-row1 { }
+.post-msg-bg-row2 { }
+.post-msg-bg-row3 { }
+
 span.corners-top {
 	background-image: url("images/blue/corners_left.png");
 }
