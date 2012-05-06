@@ -121,6 +121,7 @@
 				<a href="javascript:quotename(%27[b]{postrow.POSTER_NAME_QR}[/b],%27);">{postrow.POSTER_AVATAR}</a><br />
 				<!-- END switch_showavatars -->
 				{postrow.POSTER_FROM_FLAG}&nbsp;{postrow.POSTER_NAME}&nbsp;{postrow.POSTER_GENDER}
+				<!-- IF postrow.POSTER_FULL_NAME --><br />{postrow.POSTER_FULL_NAME}<!-- ENDIF -->
 			</dt>
 			<dd>
 			<!-- IF not S_BOT -->
