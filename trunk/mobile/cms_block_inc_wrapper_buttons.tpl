@@ -1,6 +1,6 @@
 <!-- IF OUTPUT -->
 	<!-- IF BORDER -->
-	<div class="block">
+	<div class="block well">
 	<!-- ELSE -->
 	<div class="block-empty">
 	<!-- ENDIF -->

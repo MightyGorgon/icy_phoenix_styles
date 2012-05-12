@@ -65,4 +65,6 @@
 		<!-- IF S_THANKS --><a href="{U_THANKS}" class="btn gradient">{L_THANKS}</a><!-- ENDIF --><br />
 	<!-- ENDIF -->
 		{PAGE_NUMBER} {PAGINATION}<br />
+
+</table>
 </div>

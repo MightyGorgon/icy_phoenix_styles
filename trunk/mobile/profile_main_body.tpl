@@ -6,7 +6,7 @@
 </table>
 -->
 
-<div class="block">
+<div class="block well">
 	<h2>{L_CPL_NAV}</h2>
 
 	<table width="100%" cellspacing="0" cellpadding="2" border="0">

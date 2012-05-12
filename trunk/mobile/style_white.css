@@ -1,19 +1,4 @@
 /* Main stuff */
-html, body {
-	width: 100%;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-	color: #000;
-	background-color: #fff;
-	font-family: Verdana,Helvetica,Arial,sans-serif;
-	font-size: 12px;
-	line-height: 1.3em;
-	-webkit-text-size-adjust: none;
-}
-html { height: 100%; }
-body { position: relative; }
-
 a, a:visited {
 	color: #336699;
 	text-decoration: underline;
@@ -54,13 +39,6 @@ div.clear { clear: both; }
 .center { text-align: center; }
 
 /* Header */
-#page-header, #page-footer {
-	margin: 0;
-	padding: 0;
-	height: 30px;
-	color: #333;
-	text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
-}
 
 #page-header, .gradient, table.forumlinenb th, td.row-header, .forum-cat {
 	background: #336699;
@@ -89,18 +67,6 @@ div.clear { clear: both; }
 	text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
 }
 
-#page-header h1, #page-footer > p {
-	display: inline-block;
-	font-family: Arial;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-	padding: 7px 0 4px 6px;
-	line-height: 1em;
-	max-width: 50%;
-	white-space: nowrap;
-	overflow: hidden;
-}
 #page-header h1 a { text-decoration: none; }
 #page-header > p { display: none; }
 

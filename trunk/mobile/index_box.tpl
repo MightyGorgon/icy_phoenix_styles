@@ -21,6 +21,7 @@ for($catrow_i = 0; $catrow_i < $catrow_count; $catrow_i++)
 	$catrow_item['LINK_CLASS'] = $new_msg ? ' row-new' : '';
 }
 ?>
+<div class="well">
 <!-- BEGIN catrow -->
 <!-- BEGIN cathead -->
 <div class="forum-cat">
@@ -38,3 +39,4 @@ for($catrow_i = 0; $catrow_i < $catrow_count; $catrow_i++)
 </div>	
 <!-- END forumrow -->
 <!-- END catrow -->
+</div>
