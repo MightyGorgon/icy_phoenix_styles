@@ -27,7 +27,6 @@ padding: 9px 0;
 <!-- END css_include -->
 
 {UPI2DB_FIRST_USE}
-<script src="{FULL_SITE_PATH}{T_TPL_PATH}js/jquery.js"></script>
 <script src="{FULL_SITE_PATH}{T_TPL_PATH}js/bootstrap-transition.js"></script>
 <script src="{FULL_SITE_PATH}{T_TPL_PATH}js/bootstrap-alert.js"></script>
 <script src="{FULL_SITE_PATH}{T_TPL_PATH}js/bootstrap-modal.js"></script>
