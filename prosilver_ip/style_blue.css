@@ -51,9 +51,12 @@ body.simple {
 }
 
 .rounded_line_ext {
-	background: #ccddee;
+	background-color: #ccddee;
 	padding: 5px;
 }
+
+.simple_header_wrapper { background-color: #f8f8f8; border: solid 0px transparent; border-radius: 6px; padding: 5px; }
+.bottom_div { background-color: #f8f8f8; border: solid 0px transparent; border-radius: 6px; padding: 10px; }
 
 #top_logo{
 	background-color: transparent;
@@ -1131,7 +1134,7 @@ select option {
 input.search:hover, input.search:focus, input.search:active, input.search {
 	background-image: url('images/blue/icon_textbox_search.gif');
 	background-repeat: no-repeat;
-	background-position: left 1px;
+	background-position: left center;
 	padding-left: 17px;
 }
 

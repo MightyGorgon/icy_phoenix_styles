@@ -15,7 +15,7 @@
 			<tr>
 				<td nowrap="nowrap" class="min250" align="left"><span class="copyright">{COPYRIGHT_LINK}{TRANSLATION_INFO}</span></td>
 				<td nowrap="nowrap" align="center">
-					<div style="text-align:center;">
+					<div style="text-align: center;">
 						<span class="generation"><b>{LOFI}</b></span><br />
 						<!-- IF S_GENERATION_TIME -->
 						<span class="generation">{PAGE_GEN_TIME} <b>{GENERATION_TIME}s</b> (PHP: {PHP_PART}% SQL: {SQL_PART}%){MEMORY_USAGE}</span><br />
@@ -36,7 +36,7 @@
 
 <!-- IF GF_BLOCK --><!-- BEGIN gfooter_blocks_row -->{gfooter_blocks_row.CMS_BLOCK}<!-- END gfooter_blocks_row --><!-- ENDIF -->
 {BOTTOM_HTML_BLOCK}
-<span><a name="bottom"></a></span>
+<span><a name="bottom" id="bottom"></a></span>
 <!-- IF not S_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
 
 </div>

@@ -32,7 +32,7 @@
 	</td>
 </tr>
 <tr>
-	<td class="row-post-date"><div style="text-align:center;">{text.TIME}</div></td>
+	<td class="row-post-date"><div style="text-align: center;">{text.TIME}</div></td>
 	<td class="row-post-buttons post-buttons"><div style="text-align: right">&nbsp;</div></td>
 </tr>
 <tr><td class="spaceRow" colspan="2"><img src="{SPACER}" width="1" height="3" alt="" /></td></tr>

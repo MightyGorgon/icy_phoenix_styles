@@ -76,7 +76,7 @@ if (ereg("c=", $_SERVER['REQUEST_URI']) || ereg("-vc", $_SERVER['REQUEST_URI']))
 			<!-- END forum_icon -->
 			<td width="100%">
 				<!-- BEGIN forum_link_no -->
-				<div style="float:right;padding:6px;vertical-align:bottom;">{catrow.forumrow.RSS_FEED_ICON}</div>
+				<div style="float: right; padding: 6px; vertical-align: bottom;">{catrow.forumrow.RSS_FEED_ICON}</div>
 				<!-- END forum_link_no -->
 				<span class="forumlink"><a class="forumlink{catrow.forumrow.LINK_CLASS}" href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a></span><br />
 				<span class="genmed">{catrow.forumrow.FORUM_DESC}</span>
@@ -94,7 +94,7 @@ if (ereg("c=", $_SERVER['REQUEST_URI']) || ereg("-vc", $_SERVER['REQUEST_URI']))
 	<!-- END forum_link -->
 </tr>
 <!-- IF catrow.forumrow.LINKS -->
-<tr><td class="row1h" style="padding:0px;"><span class="gensmall">{catrow.forumrow.L_LINKS}&nbsp;</span><span class="forumlink2{XS_NEW}">{catrow.forumrow.LINKS}&nbsp;</span></td></tr>
+<tr><td class="row1h" style="padding: 0px;"><span class="gensmall">{catrow.forumrow.L_LINKS}&nbsp;</span><span class="forumlink2{XS_NEW}">{catrow.forumrow.LINKS}&nbsp;</span></td></tr>
 <!-- ENDIF -->
 <?php
 if (!$banner_processed)
