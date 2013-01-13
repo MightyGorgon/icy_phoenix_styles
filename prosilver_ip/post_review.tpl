@@ -51,7 +51,7 @@
 		<div style="float: right;">
 		<ul class="profile-icons">
 			<!-- IF postrow.QUOTE_URL --><li class="quote-icon"><a href="{postrow.QUOTE_URL}" target="_parent"><span>{L_POST_QUOTE}</span></a></li><!-- ENDIF -->
-			<li class="postdownload-icon"><!-- IF not S_BOT --><a href="{postrow.DOWNLOAD_POST}" target="_parent"><span>{L_DOWNLOAD_POST}</span></a><!-- ELSE -->&nbsp;<!-- ENDIF --></li>
+			<li class="postdownload-icon"><!-- IF not S_BOT --><a href="{postrow.DOWNLOAD_POST}" target="_parent" rel="nofollow"><span>{L_DOWNLOAD_POST}</span></a><!-- ELSE -->&nbsp;<!-- ENDIF --></li>
 		</ul>
 		</div>
 		<div class="post-subject"><a href="{postrow.U_MINI_POST}"><img src="{postrow.MINI_POST_IMG}" alt="{postrow.L_MINI_POST_ALT}" title="{postrow.L_MINI_POST_ALT}" /></a> {postrow.POST_SUBJECT}&nbsp;</div>

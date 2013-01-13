@@ -39,7 +39,7 @@ function open_postreview(ref)
 			<!-- IF postrow.U_EDIT --><li class="edit-icon"><a href="{postrow.U_EDIT}"><span>{L_POST_EDIT}</span></a></li><!-- ENDIF -->
 			<!-- IF postrow.U_DELETE --><li class="delete-icon"><a href="{postrow.U_DELETE}"><span>{L_POST_DELETE}</span></a></li><!-- ENDIF -->
 			<!-- IF postrow.U_EDIT --><li class="ip-icon"><a href="{postrow.U_IP}"><span>{L_USER_IP}</span></a></li><!-- ENDIF -->
-			<li class="postdownload-icon"><a href="{postrow.DOWNLOAD_POST}"><span>{L_DOWNLOAD_POST}</span></a></li>
+			<li class="postdownload-icon"><a href="{postrow.DOWNLOAD_POST}" rel="nofollow"><span>{L_DOWNLOAD_POST}</span></a></li>
 			<!-- ENDIF -->
 			<li class="inline">{postrow.ARROWS}</li>
 		</ul>
