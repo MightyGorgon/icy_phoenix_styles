@@ -217,6 +217,35 @@
 <!-- ENDIF -->
 <!-- END postrow -->
 
+<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+	<td align="left" valign="top">
+	<div class="buttons">
+		<!-- IF not S_BOT -->
+		<div class="newtopic-button"><a href="{U_POST_NEW_TOPIC}"><span>{L_POST_NEW_TOPIC}</span></a></div>
+		<!-- IF IS_LOCKED --><div class="locked-button"><!-- ELSE --><div class="postreply-button"><!-- ENDIF --><a href="{U_POST_REPLY_TOPIC}"><span>{L_POST_REPLY_TOPIC}</span></a></div>
+		<!-- IF S_THANKS --><div class="thanks-button"><a href="{U_THANKS}"><span>{L_THANKS}</span></a></div><!-- ENDIF -->
+		<!-- IF S_CAN_REPLY --><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div><!-- ENDIF -->
+		<!-- ELSE -->
+		&nbsp;
+		<!-- ENDIF -->
+	</div>
+	</td>
+	<td align="right" valign="top">
+		<span class="gen">{PAGE_NUMBER}</span><br />
+		<span class="pagination">{PAGINATION}</span>
+	</td>
+</tr>
+</table>
+
+<br clear="all" />
+
+<!-- IF not S_BOT -->
+{CA_QUICK_REPLY_FORM}
+<!-- ENDIF -->
+
+<br clear="all" />
+
 <!-- IF VIEWTOPIC_BANNER_BOTTOM -->
 <div class="post-msg row3" style="border-width: 0px; margin-top: 5px;">
 	<div class="inner"><span class="corners-top"><span></span></span>
@@ -266,29 +295,6 @@ if(GetCookie(tmp) == '2')
 <!-- ENDIF -->
 
 {SIMILAR_VIEWTOPIC}
-{CA_QUICK_REPLY_FORM}
-
-<br />
-<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr>
-	<td align="left" valign="top">
-	<div class="buttons">
-		<!-- IF not S_BOT -->
-		<div class="newtopic-button"><a href="{U_POST_NEW_TOPIC}"><span>{L_POST_NEW_TOPIC}</span></a></div>
-		<!-- IF IS_LOCKED --><div class="locked-button"><!-- ELSE --><div class="postreply-button"><!-- ENDIF --><a href="{U_POST_REPLY_TOPIC}"><span>{L_POST_REPLY_TOPIC}</span></a></div>
-		<!-- IF S_THANKS --><div class="thanks-button"><a href="{U_THANKS}"><span>{L_THANKS}</span></a></div><!-- ENDIF -->
-		<!-- IF S_CAN_REPLY --><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div><!-- ENDIF -->
-		<!-- ELSE -->
-		&nbsp;
-		<!-- ENDIF -->
-	</div>
-	</td>
-	<td align="right" valign="top">
-		<span class="gen">{PAGE_NUMBER}</span><br />
-		<span class="pagination">{PAGINATION}</span>
-	</td>
-</tr>
-</table>
 
 <!-- INCLUDE breadcrumbs_vt.tpl -->
 
@@ -333,6 +339,11 @@ if(GetCookie(tmp) == '2')
 		//-->
 		</script>
 	</td>
-	<td align="right" valign="top">{S_TOPIC_ADMIN}<br /><br /><br />{JUMPBOX}</td>
+	<td align="right" valign="top">
+		<!-- IF not S_BOT and S_TMOD_BUTTONS -->
+		<!-- INCLUDE viewtopic_admin.tpl -->
+		<!-- ENDIF -->
+		{JUMPBOX}
+	</td>
 </tr>
 </table>
