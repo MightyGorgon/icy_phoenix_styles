@@ -217,6 +217,17 @@
 <!-- ENDIF -->
 <!-- END postrow -->
 
+<!-- IF VIEWTOPIC_BANNER_BOTTOM -->
+<div class="post-msg row3" style="border-width: 0px; margin-top: 5px;">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<div class="center-block-text" style="overflow:auto;">{VIEWTOPIC_BANNER_BOTTOM}</div>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+<!-- ENDIF -->
+
+<hr />
 <table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
 <tr>
 	<td align="left" valign="top">
@@ -246,17 +257,6 @@
 
 <br clear="all" />
 
-<!-- IF VIEWTOPIC_BANNER_BOTTOM -->
-<div class="post-msg row3" style="border-width: 0px; margin-top: 5px;">
-	<div class="inner"><span class="corners-top"><span></span></span>
-
-	<div class="center-block-text" style="overflow:auto;">{VIEWTOPIC_BANNER_BOTTOM}</div>
-
-	<span class="corners-bottom"><span></span></span></div>
-</div>
-<!-- ENDIF -->
-
-<hr />
 <form method="post" action="{S_POST_DAYS_ACTION}">
 <fieldset class="display-options" style="margin-top: 0; border-width: 0px;"><label>{L_DISPLAY_POSTS}:&nbsp;{S_SELECT_SORT_DAYS}&nbsp;{S_SELECT_SORT_KEY}&nbsp;{S_SELECT_SORT_DIR}&nbsp;<input type="submit" value="{L_GO}" class="liteoption jumpbox" name="submit" /></label></fieldset>
 </form>
