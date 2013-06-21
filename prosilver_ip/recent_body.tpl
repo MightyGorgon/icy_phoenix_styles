@@ -28,8 +28,8 @@
 <!-- BEGIN recent -->
 <tr class="{recent.ROW_CLASS}h{recent.CLASS_NEW} row-forum">
 	<td class="{recent.ROW_CLASS} row-center" style="background: none;" width="22"><img src="{recent.TOPIC_FOLDER_IMG}" alt="{recent.L_TOPIC_FOLDER_ALT}" title="{recent.L_TOPIC_FOLDER_ALT}" style="margin-right:4px;" /></td>
-	<td class="{recent.ROW_CLASS}h{recent.CLASS_NEW} row-forum" style="background: none; cursor: pointer;" onclick="window.location.href='{recent.U_VIEW_FORUM}'"><span class="topiclink{recent.CLASS_NEW}"><a href="{recent.U_VIEW_FORUM}">{recent.FORUM_NAME}</a></span></td>
-	<td class="{recent.ROW_CLASS}h{recent.CLASS_NEW} row-forum" style="background: none; cursor: pointer;" onclick="window.location.href='{recent.U_VIEW_TOPIC}'">
+	<td class="{recent.ROW_CLASS}h{recent.CLASS_NEW} row-forum" style="background: none; cursor: pointer;" data-href="{recent.U_VIEW_FORUM}"><span class="topiclink{recent.CLASS_NEW}"><a href="{recent.U_VIEW_FORUM}">{recent.FORUM_NAME}</a></span></td>
+	<td class="{recent.ROW_CLASS}h{recent.CLASS_NEW} row-forum" style="background: none; cursor: pointer;" data-href="{recent.U_VIEW_TOPIC}">
 		<span class="topiclink{recent.CLASS_NEW}">{recent.NEWEST_POST_IMG}{recent.TOPIC_ATTACHMENT_IMG}{recent.L_NEWS}{recent.TOPIC_TYPE}<a href="{recent.U_VIEW_TOPIC}" class="{recent.TOPIC_CLASS}">{recent.TOPIC_TITLE}</a></span>
 		<div style="float: right; display: block; height: auto; vertical-align: top; margin-top: 0px !important; padding-top: 0px !important; padding-right: 3px;">{recent.GOTO_PAGE_FULL}</div>
 		<div class="gensmall" style="padding-top: 5px;">{recent.FIRST_AUTHOR}&nbsp;&bull;&nbsp;{recent.FIRST_POST_TIME}</div>

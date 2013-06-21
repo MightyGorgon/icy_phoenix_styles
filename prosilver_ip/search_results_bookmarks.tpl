@@ -17,8 +17,8 @@
 <!-- BEGIN searchresults -->
 <tr class="{searchresults.ROW_CLASS}h{searchresults.CLASS_NEW} row-forum">
 	<td class="{searchresults.ROW_CLASS} row-center" style="background: none;"><img src="{searchresults.TOPIC_FOLDER_IMG}" alt="{searchresults.L_TOPIC_FOLDER_ALT}" title="{searchresults.L_TOPIC_FOLDER_ALT}" /></td>
-	<td class="{searchresults.ROW_CLASS}h row-forum" style="background: none; cursor: pointer;" onclick="window.location.href='{searchresults.U_VIEW_FORUM}'"><span class="forumlink"><a href="{searchresults.U_VIEW_FORUM}" class="forumlink">{searchresults.FORUM_NAME}</a></span><br /></td>
-	<td class="{searchresults.ROW_CLASS}h row-forum" style="background: none; cursor: pointer;" onclick="window.location.href='{searchresults.U_VIEW_TOPIC}'">
+	<td class="{searchresults.ROW_CLASS}h row-forum" style="background: none; cursor: pointer;" data-href="{searchresults.U_VIEW_FORUM}"><span class="forumlink"><a href="{searchresults.U_VIEW_FORUM}" class="forumlink">{searchresults.FORUM_NAME}</a></span><br /></td>
+	<td class="{searchresults.ROW_CLASS}h row-forum" style="background: none; cursor: pointer;" data-href="{searchresults.U_VIEW_TOPIC}">
 		<span class="topiclink">{searchresults.NEWEST_POST_IMG}{searchresults.TOPIC_TYPE}<a href="{searchresults.U_VIEW_TOPIC}" class="topiclink">{searchresults.TOPIC_TITLE}</a></span>
 		{searchresults.GOTO_PAGE_FULL}
 	</td>

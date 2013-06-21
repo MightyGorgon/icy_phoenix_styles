@@ -8,7 +8,7 @@
 </tr>
 <!-- BEGIN pending_members_row -->
 <tr>
-	<td class="row1h row-center" onclick="window.location.href='{pending_members_row.U_VIEWPROFILE}'"><a href="{pending_members_row.U_VIEWPROFILE}">{pending_members_row.USERNAME}</a></td>
+	<td class="row1h row-center" data-href="{pending_members_row.U_VIEWPROFILE}"><a href="{pending_members_row.U_VIEWPROFILE}">{pending_members_row.USERNAME}</a></td>
 	<td class="row2 row-center">{pending_members_row.POSTS}</td>
 	<td class="row1 row-center">&nbsp;{pending_members_row.FROM}&nbsp;</td>
 	<td class="row1 row-center-small"><ul class="profile-icons" style="padding-left: 10px;"><li class="{pending_members_row.ONLINE_STATUS_CLASS}-icon"><a href="{pending_members_row.POSTER_ONLINE_STATUS_URL}"><span>{pending_members_row.L_POSTER_ONLINE_STATUS}</span></a></li><li class="pm-icon"><a href="{pending_members_row.PM_URL}"><span>{L_PM}</span></a></li><!-- IF pending_members_row.EMAIL_URL --><li class="email-icon"><a href="{pending_members_row.EMAIL_URL}"><span>{L_USER_EMAIL}</span></a></li><!-- ENDIF --><!-- IF pending_members_row.WWW_URL --><li class="web-icon"><a href="{pending_members_row.WWW_URL}" target="_blank"><span>{L_USER_WWW}</span></a></li><!-- ENDIF --></ul></td>

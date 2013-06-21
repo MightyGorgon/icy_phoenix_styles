@@ -40,8 +40,8 @@ function setCheckboxes(theForm, elementName, isChecked)
 <!-- BEGIN draft_row -->
 <tr class="{draft_row.ROW_CLASS}h row-forum">
 	<td class="{draft_row.ROW_CLASS} row-center" style="background: none;">{draft_row.DRAFT_IMG}&nbsp;</td>
-	<td class="{draft_row.ROW_CLASS}h row-forum" style="background: none; cursor: pointer;" onclick="window.location.href='{draft_row.DRAFT_CAT_LINK}'"><span class="topiclink">{draft_row.DRAFT_CAT}</span></td>
-	<td class="{draft_row.ROW_CLASS}h row-forum" style="background: none; cursor: pointer;" onclick="window.location.href='{draft_row.DRAFT_TITLE_LINK}'"><span class="topiclink">{draft_row.DRAFT_TITLE}</span></td>
+	<td class="{draft_row.ROW_CLASS}h row-forum" style="background: none; cursor: pointer;" data-href="{draft_row.DRAFT_CAT_LINK}"><span class="topiclink">{draft_row.DRAFT_CAT}</span></td>
+	<td class="{draft_row.ROW_CLASS}h row-forum" style="background: none; cursor: pointer;" data-href="{draft_row.DRAFT_TITLE_LINK}"><span class="topiclink">{draft_row.DRAFT_TITLE}</span></td>
 	<td class="{draft_row.ROW_CLASS} row-center" style="background: none;"><span class="gensmall"><a href="{draft_row.U_DRAFT_LOAD}">{L_DRAFTS_LOAD}</a><br /><a href="{draft_row.U_DRAFT_DELETE}">{L_DRAFTS_DELETE}</a></span></td>
 	<td class="{draft_row.ROW_CLASS} row-center" style="background: none;"><span class="gensmall">{draft_row.DRAFT_TIME}</span></td>
 	<td class="{draft_row.ROW_CLASS} row-center" style="background: none;" nowrap="nowrap"><input type="checkbox" name="drafts_list[]" value="{draft_row.S_DRAFT_ID}" /></td>

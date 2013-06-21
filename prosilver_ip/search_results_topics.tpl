@@ -28,8 +28,8 @@ function select_switch(status)
 <!-- BEGIN searchresults -->
 <tr class="{searchresults.ROW_CLASS}h{searchresults.CLASS_NEW} row-forum">
 	<td class="{searchresults.ROW_CLASS} row-center" style="background: none;">{searchresults.U_MARK_ALWAYS_READ}</td>
-	<td class="{searchresults.ROW_CLASS}h{searchresults.CLASS_NEW} row-forum" style="background: none; cursor: pointer;" onclick="window.location.href='{searchresults.U_VIEW_FORUM}'"><span class="topiclink{searchresults.CLASS_NEW}"><a href="{searchresults.U_VIEW_FORUM}">{searchresults.FORUM_NAME}</a></span></td>
-	<td class="{searchresults.ROW_CLASS}h{searchresults.CLASS_NEW} row-forum" style="background: none; cursor: pointer;" onclick="window.location.href='{searchresults.U_VIEW_TOPIC}'">
+	<td class="{searchresults.ROW_CLASS}h{searchresults.CLASS_NEW} row-forum" style="background: none; cursor: pointer;" data-href="{searchresults.U_VIEW_FORUM}"><span class="topiclink{searchresults.CLASS_NEW}"><a href="{searchresults.U_VIEW_FORUM}">{searchresults.FORUM_NAME}</a></span></td>
+	<td class="{searchresults.ROW_CLASS}h{searchresults.CLASS_NEW} row-forum" style="background: none; cursor: pointer;" data-href="{searchresults.U_VIEW_TOPIC}">
 		<div class="topic-title-hide-flow"><span class="topiclink{searchresults.CLASS_NEW}">{searchresults.NEWEST_POST_IMG}{searchresults.TOPIC_TYPE}<a href="{searchresults.U_VIEW_TOPIC}" class="{searchresults.TOPIC_CLASS}">{searchresults.TOPIC_TITLE}</a></span> <!-- BEGIN display_reg -->[{searchresults.REG_OPTIONS}]&nbsp;{searchresults.REG_USER_OWN_REG}<!-- END display_reg --></div>
 		{searchresults.GOTO_PAGE_FULL}
 	</td>

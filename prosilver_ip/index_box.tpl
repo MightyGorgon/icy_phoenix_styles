@@ -68,7 +68,7 @@ if (ereg("c=", $_SERVER['REQUEST_URI']) || ereg("-vc", $_SERVER['REQUEST_URI']))
 <tr class="row1h{catrow.forumrow.LINK_CLASS} row-forum">
 	<!-- BEGIN inc --><td width="37" class="{catrow.forumrow.inc.INC_CLASS}"{catrow.forumrow.LINKS_ROWSPAN}><img src="{SPACER}" width="37" height="0" alt="" /></td><!-- END inc -->
 	<td class="row1" style="padding-left: 1px; padding-right: 3px; vertical-align: middle; min-height: 50px; background: none;" width="37" height="50"{catrow.forumrow.LINKS_ROWSPAN}>{catrow.forumrow.U_MARK_ALWAYS_READ}</td>
-	<td class="row1" style="background: none; cursor: pointer;" width="100%" colspan="{catrow.forumrow.INC_SPAN}" onclick="window.location.href='{catrow.forumrow.U_VIEWFORUM}'">
+	<td class="row1" style="background: none; cursor: pointer;" width="100%" colspan="{catrow.forumrow.INC_SPAN}" data-href="{catrow.forumrow.U_VIEWFORUM}">
 		<table width="100%" cellspacing="0" cellpadding="2" border="0">
 		<tr>
 			<!-- BEGIN forum_icon -->
