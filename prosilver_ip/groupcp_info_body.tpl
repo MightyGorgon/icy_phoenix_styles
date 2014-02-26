@@ -1,7 +1,3 @@
-<!-- IF S_AJAX_FEATURES -->
-<script type="text/javascript" src="{FULL_SITE_PATH}{T_COMMON_TPL_PATH}js/ajax/ajax_searchfunctions.js"></script>
-<!-- ENDIF -->
-
 <form action="{S_GROUPCP_ACTION}" method="post">
 
 {IMG_THL}{IMG_THC}<span class="forumlink">{L_GROUP_INFORMATION}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
@@ -108,12 +104,12 @@
 		<!-- BEGIN switch_mod_option -->
 		<span class="genmed">
 		<input type="text" class="post" name="username" id="username" maxlength="50" size="20" {S_AJAX_USER_CHECK} />&nbsp;
-		<span id="username_list" style="display:none;">&nbsp;<span id="username_select">&nbsp;</span></span>
+		<span id="username_list" style="display: none;">&nbsp;<span id="username_select">&nbsp;</span></span>
 		<input type="submit" name="add" value="{L_ADD_MEMBER}" class="mainoption" />&nbsp;
 		<input type="submit" name="usersubmit" value="{L_FIND_USERNAME}" class="liteoption" onclick="window.open('{U_SEARCH_USER}', '_search', 'width=400,height=250,resizable=yes'); return false;" />
 		</span>
 		<br />
-		<span id="username_error_tbl" style="display:none;"><span id="username_error_text" class="gen">&nbsp;</span></span>
+		<span id="username_error_tbl" style="display: none;"><span id="username_error_text" class="gen">&nbsp;</span></span>
 		<br /><br />
 		<!-- END switch_mod_option -->
 		{PAGE_NUMBER}

@@ -87,7 +87,7 @@ function attach_rules(forum_id)
 	<td class="row1"><span class="gen"><b>{L_USERNAME}</b></span></td>
 	<td class="row2"><span class="genmed"><input type="text" class="post" name="username" maxlength="25" size="25" tabindex="1" value="{USERNAME}" {S_AJAX_PM_USER_CHECK} /><span id="pm_username_select">&nbsp;</span>&nbsp;<input type="submit" name="usersubmit" value="{L_FIND_USERNAME}" class="liteoption" onclick="window.open('{U_SEARCH_USER}', '_search', 'width=400,height=200,resizable=yes'); return false;" /></span></td>
 </tr>
-<tr id="pm_username_error_tbl" style="display:none;">
+<tr id="pm_username_error_tbl" style="display: none;">
 	<td class="row1">&nbsp;</td>
 	<td class="row2"><span class="gen" id="pm_username_error_text">&nbsp;</span></td>
 </tr>
@@ -97,11 +97,11 @@ function attach_rules(forum_id)
 	<td class="row2"><input type="text" name="subject" size="45" maxlength="120" style="width: 98%;" tabindex="2" class="post" value="{SUBJECT}" {S_AJAX_BLUR} /></td>
 </tr>
 <!-- IF S_AJAX_FEATURES -->
-<tr id="subject_error_tbl" style="display:none;">
+<tr id="subject_error_tbl" style="display: none;">
 	<td class="row1">&nbsp;</td>
 	<td class="row2"><span class="gen">{L_EMPTY_SUBJECT}</span></td>
 </tr>
-<tr id="searchresults_tbl" style="display:none;">
+<tr id="searchresults_tbl" style="display: none;">
 	<td class="row1">&nbsp;</td>
 	<td class="row2"><span class="gen"><a href="#" target="_blank" class="gen" id="searchresults_lnk">{L_AJAX_NO_RESULTS}</a></span></td>
 </tr>
