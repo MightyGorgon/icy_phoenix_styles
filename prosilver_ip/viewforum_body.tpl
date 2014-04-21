@@ -57,7 +57,7 @@
 <tr class="{topicrow.ROW_CLASS}h{topicrow.CLASS_NEW} row-forum">
 	<td class="{topicrow.ROW_CLASS} row-center" style="padding: 3px; background: none;" width="20">{topicrow.U_MARK_ALWAYS_READ}</td>
 	<td class="{topicrow.ROW_CLASS}h{topicrow.CLASS_NEW} row-forum" width="100%" style="background: none; cursor: pointer;" data-href="{topicrow.U_VIEW_TOPIC}">
-		<div class="topic-title-hide-flow"><span class="topiclink{topicrow.CLASS_NEW}">{topicrow.NEWEST_POST_IMG}{topicrow.TOPIC_ATTACHMENT_IMG}{topicrow.TOPIC_TYPE}<a href="{topicrow.U_VIEW_TOPIC}" class="{topicrow.TOPIC_CLASS}">{topicrow.TOPIC_TITLE}</a> <!-- BEGIN display_reg --> [{topicrow.REG_OPTIONS}]&nbsp;{topicrow.REG_USER_OWN_REG}<!-- END display_reg -->{topicrow.CALENDAR_TITLE}</span></div>
+		<!-- IF S_FORUM_LIKES_SWITCH and topicrow.LIKES --><div style="float: right; display: inline; vertical-align: top; margin-top: 0px !important; padding-top: 0px !important; padding-right: 3px;"><span class="fff-icon-heart"></span> {topicrow.LIKES}</div><!-- ENDIF --><div class="topic-title-hide-flow"><span class="topiclink{topicrow.CLASS_NEW}">{topicrow.NEWEST_POST_IMG}{topicrow.TOPIC_ATTACHMENT_IMG}{topicrow.TOPIC_TYPE}<a href="{topicrow.U_VIEW_TOPIC}" class="{topicrow.TOPIC_CLASS}">{topicrow.TOPIC_TITLE}</a> <!-- BEGIN display_reg --> [{topicrow.REG_OPTIONS}]&nbsp;{topicrow.REG_USER_OWN_REG}<!-- END display_reg -->{topicrow.CALENDAR_TITLE}</span></div>
 		<!-- BEGIN switch_topic_desc -->
 		<span class="gensmall">&nbsp;{topicrow.switch_topic_desc.TOPIC_DESCRIPTION}</span><br />
 		<!-- END switch_topic_desc -->

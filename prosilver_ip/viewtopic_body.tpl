@@ -26,7 +26,6 @@
 	<div class="buttons">
 		<div class="newtopic-button"><a href="{U_POST_NEW_TOPIC}"><span>{L_POST_NEW_TOPIC}</span></a></div>
 		<!-- IF IS_LOCKED --><div class="locked-button"><!-- ELSE --><div class="postreply-button"><!-- ENDIF --><a href="{U_POST_REPLY_TOPIC}"><span>{L_POST_REPLY_TOPIC}</span></a></div>
-		<!-- IF S_THANKS --><div class="thanks-button"><a href="{U_THANKS}"><span>{L_THANKS}</span></a></div><!-- ENDIF -->
 	</div>
 	<!-- ELSE -->
 	&nbsp;
@@ -157,7 +156,6 @@
 			<dd>{postrow.POSTER_JOINED}</dd>
 			<dd>{postrow.POSTER_FROM}</dd>
 			<dd>{postrow.POSTER_POSTS}</dd>
-			<!-- IF postrow.POSTER_THANKS_RECEIVED --><dd>{postrow.POSTER_THANKS_RECEIVED}</dd><!-- ENDIF -->
 			<!-- IF postrow.FEEDBACK --><dd>{postrow.FEEDBACK}</dd><!-- ENDIF -->
 			<!-- BEGIN switch_poster_info -->
 			<dd>
@@ -189,7 +187,7 @@
 
 		<div class="post-bottom-right">
 		<!-- IF S_POSTS_LIKES -->
-		<span class="gensmall"><span id="like_s_p{postrow.U_POST_ID}"><!-- IF postrow.POST_LIKE_TEXT -->{postrow.POST_LIKE_TEXT}&nbsp;&bull;<!-- ENDIF -->&nbsp;</span><!-- IF S_LOGGED_IN --><a href="#" id="like_a_p{postrow.U_POST_ID}" style="text-decoration: none;" onclick="post_like_ajax({postrow.U_TOPIC_ID}, {postrow.U_POST_ID}); return false;"><!-- IF postrow.READER_LIKES -->{L_UNLIKE}<!-- ELSE -->{L_LIKE}<!-- ENDIF --></a>&nbsp;&bull;<!-- ENDIF -->&nbsp;{postrow.SINGLE_POST_SHARE}</span><br clear="all" />
+		<span class="gensmall"><span id="like_s_p{postrow.U_POST_ID}"><!-- IF postrow.POST_LIKE_TEXT -->{postrow.POST_LIKE_TEXT}&nbsp;&bull;<!-- ENDIF -->&nbsp;</span><!-- IF S_LOGGED_IN and not postrow.S_OWN_POST --><a href="#" id="like_a_p{postrow.U_POST_ID}" style="text-decoration: none;" onclick="post_like_ajax({postrow.U_TOPIC_ID}, {postrow.U_POST_ID}); return false;"><!-- IF postrow.READER_LIKES -->{L_UNLIKE}<!-- ELSE -->{L_LIKE}<!-- ENDIF --></a>&nbsp;&bull;<!-- ENDIF -->&nbsp;{postrow.SINGLE_POST_SHARE}</span><br clear="all" />
 		<!-- ENDIF -->
 		<div style="float: right; vertical-align: bottom; text-align: right;">
 		<ul class="profile-icons">
@@ -206,14 +204,6 @@
 		</div>
 	<span class="corners-bottom"><span></span></span></div>
 </div>
-<!-- BEGIN thanks -->
-<div class="navbar">
-	<div class="inner"><span class="corners-top"><span></span></span>
-	<div style="text-align: left;">{postrow.thanks.THANKS3}<br /><span class="gensmall">{postrow.thanks.THANKS}&nbsp;</span></div>
-	<span class="corners-bottom"><span></span></span></div>
-</div>
-<hr class="divider" />
-<!-- END thanks -->
 <hr class="divider" />
 <!-- IF not S_BOT -->
 <!-- BEGIN switch_viewtopic_banner -->
@@ -252,7 +242,6 @@
 		<!-- IF not S_BOT -->
 		<div class="newtopic-button"><a href="{U_POST_NEW_TOPIC}"><span>{L_POST_NEW_TOPIC}</span></a></div>
 		<!-- IF IS_LOCKED --><div class="locked-button"><!-- ELSE --><div class="postreply-button"><!-- ENDIF --><a href="{U_POST_REPLY_TOPIC}"><span>{L_POST_REPLY_TOPIC}</span></a></div>
-		<!-- IF S_THANKS --><div class="thanks-button"><a href="{U_THANKS}"><span>{L_THANKS}</span></a></div><!-- ENDIF -->
 		<!-- IF S_CAN_REPLY --><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div><!-- ENDIF -->
 		<!-- ELSE -->
 		&nbsp;

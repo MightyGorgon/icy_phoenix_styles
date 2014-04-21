@@ -70,8 +70,7 @@ function checkFormRate()
 		<br /><span class="genmed"><b>{PIC_COUNT}</b></span><br />
 		{U_PIC_L1}<img src="{U_PIC}" border="0" vspace="10" alt="{PIC_TITLE}" title="{PIC_TITLE}" />{U_PIC_L2}
 		</div>
-		<span class="genmed">{U_PIC_CLICK}</span><br />
-		<!-- IF not S_BOT -->
+		<!-- IF U_PIC_CLICK --><span class="genmed">{U_PIC_CLICK}</span><br /><!-- ENDIF -->
 		<!-- IF not S_BOT and S_PIC_NUFFED -->
 		<span class="gensmall"><a href="{U_PIC_NUFFED_CLICK}">{L_PIC_NUFFED_CLICK}</a></span><br />
 		<!-- ENDIF -->
