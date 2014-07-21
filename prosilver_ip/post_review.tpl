@@ -10,14 +10,14 @@
 	}
 //-->
 </script>
-{IMG_THL}{IMG_THC}<span class="forumlink"><!-- BEGIN postrow -->{postrow.POST_SUBJECT}<!-- END postrow --></span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink"><!-- BEGIN postrow -->{postrow.POST_SUBJECT}<!-- END postrow --></span>{IMG_THR}<table class="forumlinenb">
 <tr>
-	<th nowrap="nowrap">{L_AUTHOR}</th>
-	<th nowrap="nowrap">{L_MESSAGE}</th>
+	<th class="tdnw">{L_AUTHOR}</th>
+	<th class="tdnw">{L_MESSAGE}</th>
 </tr>
 <!-- BEGIN postrow -->
 <tr>
-	<td class="row-post-author" nowrap="nowrap">
+	<td class="row-post-author tdnw">
 		<span class="post-name"><a name="p{postrow.U_POST_ID}"></a>{postrow.POSTER_NAME}</span><br />
 		<!-- IF not S_BOT -->
 		<div class="post-rank">
@@ -44,10 +44,10 @@
 			<!-- IF postrow.SKYPE_URL --><li class="skype-icon"><a href="{postrow.SKYPE_URL}"><span>{L_SKYPE}</span></a></li><!-- ENDIF -->
 			<!-- IF postrow.YIM_URL --><li class="yahoo-icon"><a href="{postrow.YIM_URL}"><span>{L_YIM}</span></a></li><!-- ENDIF -->
 		</ul>
-		<br clear="all" />
+		<br class="clear" />
 		<br />
 	</td>
-	<td class="row-post" width="100%" height="100%">
+	<td class="row-post tw100pct th100pct">
 		<div style="float: right;">
 		<ul class="profile-icons">
 			<!-- IF postrow.QUOTE_URL --><li class="quote-icon"><a href="{postrow.QUOTE_URL}" target="_parent"><span>{L_POST_QUOTE}</span></a></li><!-- ENDIF -->

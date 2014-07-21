@@ -1,26 +1,26 @@
 <!-- INCLUDE overall_header.tpl -->
 
 <!-- IF S_ADMIN -->
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_QUICK_ADMIN_OPTIONS}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_QUICK_ADMIN_OPTIONS}</span>{IMG_THR}<table class="forumlinenb">
 <tr>
 	<td class="row1 row-center" colspan="2" ><span class="genmed"><a href="{U_ADMIN_EDIT_PROFILE}" title="{L_ADMIN_EDIT_PROFILE}">{L_ADMIN_EDIT_PROFILE}</a>&nbsp;&bull;&nbsp;<a href="{U_ADMIN_EDIT_PERMISSIONS}" title="{L_ADMIN_EDIT_PERMISSIONS}">{L_ADMIN_EDIT_PERMISSIONS}</a>&nbsp;&bull;&nbsp;{L_USER_ACTIVE_INACTIVE}&nbsp;&bull;&nbsp;{L_BANNED_USERNAME}&nbsp;[&nbsp;<a href="{U_USER_BAN_UNBAN}" title="{L_USER_BAN_UNBAN}">{L_USER_BAN_UNBAN}</a>&nbsp;]&nbsp;&bull;&nbsp;{L_BANNED_EMAIL}</span></td>
 </tr>
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
 <!-- ENDIF -->
 
-{IMG_THL}{IMG_THC}<span class="forumlink">{USERNAME}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{USERNAME}</span>{IMG_THR}<table class="forumlinenb">
 <tr>
-	<td height="2"></td>
+	<td class="th2px">&nbsp;</td>
 	<td>
-		<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
-		<tr><td height="2"></td></tr>
+		<table>
+		<tr><td class="th2px">&nbsp;</td></tr>
 		<tr>
-			<td width="50%" valign="top" class="forumline">
-				<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<td class="forumline tw50pct">
+				<table>
 					<tr><th colspan="2"><span class="genmed"><b>{L_INVISION_MEMBER_TITLE} &amp; {L_AVATAR}</b></span></th></tr>
 					<tr>
-						<td width="33%" class="row2" valign="top"><b><span class="genmed">{L_INVISION_MEMBER_TITLE} &amp; {L_AVATAR}</span></b></td>
-						<td width="64%" class="row1 row-center"><span class="genmed">{INVISION_AVATAR_IMG}<br clear="all" />{USER_RANK_01}{USER_RANK_01_IMG}{USER_RANK_02}{USER_RANK_02_IMG}{USER_RANK_03}{USER_RANK_03_IMG}{USER_RANK_04}{USER_RANK_04_IMG}{USER_RANK_05}{USER_RANK_05_IMG}</span></td>
+						<td class="tw33pct row2"><b><span class="genmed">{L_INVISION_MEMBER_TITLE} &amp; {L_AVATAR}</span></b></td>
+						<td class="row1 row-center tw64pct"><span class="genmed">{INVISION_AVATAR_IMG}<br class="clear" />{USER_RANK_01}{USER_RANK_01_IMG}{USER_RANK_02}{USER_RANK_02_IMG}{USER_RANK_03}{USER_RANK_03_IMG}{USER_RANK_04}{USER_RANK_04_IMG}{USER_RANK_05}{USER_RANK_05_IMG}</span></td>
 					</tr>
 					<tr><th colspan="2"><span class="genmed"><b>{L_INVISION_COMMUNICATE}</b></span></th></tr>
 					<tr>
@@ -38,13 +38,13 @@
 					<!-- IF S_LOGGED_IN -->
 					<!-- IF SHOW_FRIEND_LINK -->
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{L_FRIENDSHIP_STATUS}</span></b></td>
+						<td class="row2"><b><span class="genmed">{L_FRIENDSHIP_STATUS}</span></b></td>
 						<td class="row1 post-buttons"><span class="gensmall"><a href="{U_FRIEND_ADD_REMOVE}" class="gensmall"><!-- IF IS_FRIEND -->{L_FRIEND_REMOVE}<!-- ELSE -->{L_FRIEND_ADD}<!-- ENDIF --></a></span></td>
 					</tr>
 					<!-- ENDIF -->
 					<!-- IF ICON_CHAT -->
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{L_AJAX_SHOUTBOX_PVT}</span></b></td>
+						<td class="row2"><b><span class="genmed">{L_AJAX_SHOUTBOX_PVT}</span></b></td>
 						<td class="row1 post-buttons"><span class="gensmall"><a href="{U_AJAX_SHOUTBOX_PVT_LINK}">{L_AJAX_SHOUTBOX_PVT_LINK}</a></span></td>
 					</tr>
 					<!-- ENDIF -->
@@ -59,26 +59,26 @@
 					</tr>
 					<!-- BEGIN custom_contact -->
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{custom_contact.NAME}</span></b></td>
+						<td class="row2"><b><span class="genmed">{custom_contact.NAME}</span></b></td>
 						<td class="row1 post-buttons"><span class="genmed">{custom_contact.VALUE}</span></td>
 					</tr>
 					<!-- END custom_contact -->
 				</table>
 			</td>
-			<td width="2"><img src="{SPACER}" width="2" alt="" /></td>
-			<td width="50%" valign="top" class="forumline">
-				<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<td class="tw2px"><img src="{SPACER}" width="2" alt="" /></td>
+			<td class="forumline tw50pct">
+				<table>
 					<tr><th colspan="2"><span class="genmed"><b>{L_INVISION_INFO}</b></span></th></tr>
 					<tr>
-						<td width="33%" class="row2"><b><span class="genmed">{L_ONLINE_STATUS}</span></b></td>
-						<td width="64%" class="row1"><span class="genmed">{ONLINE_STATUS_IMG}&nbsp;{USER_OS_IMG}&nbsp;{USER_BROWSER_IMG}</span></td>
+						<td class="tw33pct row2"><b><span class="genmed">{L_ONLINE_STATUS}</span></b></td>
+						<td class="row1 tw64pct"><span class="genmed">{ONLINE_STATUS_IMG}&nbsp;{USER_OS_IMG}&nbsp;{USER_BROWSER_IMG}</span></td>
 					</tr>
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{L_USER_FIRST_NAME}</span></b></td>
+						<td class="row2"><b><span class="genmed">{L_USER_FIRST_NAME}</span></b></td>
 						<td class="row1"><span class="genmed">{USER_FIRST_NAME}</span></td>
 					</tr>
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{L_USER_LAST_NAME}</span></b></td>
+						<td class="row2"><b><span class="genmed">{L_USER_LAST_NAME}</span></b></td>
 						<td class="row1"><span class="genmed">{USER_LAST_NAME}</span></td>
 					</tr>
 					<tr>
@@ -107,14 +107,14 @@
 					</tr>
 					<!-- BEGIN custom_about -->
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{custom_about.NAME}</span></b></td>
+						<td class="row2"><b><span class="genmed">{custom_about.NAME}</span></b></td>
 						<td class="row1 post-buttons"><span class="genmed">{custom_about.VALUE}</span></td>
 					</tr>
 					<!-- END custom_about -->
 					<!-- IF S_DISPLAY_UCP_GROUPS -->
 					<tr><th colspan="2"><span class="genmed"><b>{L_INVISION_MEMBER_GROUP}</b></span></th></tr>
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed"><a href="{U_USERGROUPS}">{L_INVISION_MEMBER_GROUP}</a></span></b></td>
+						<td class="row2"><b><span class="genmed"><a href="{U_USERGROUPS}">{L_INVISION_MEMBER_GROUP}</a></span></b></td>
 						<td class="row1">
 							<span class="genmed">
 							<!-- BEGIN groups -->
@@ -127,25 +127,25 @@
 					<!-- IF S_DISPLAY_NON_MEMBER_GROUPS -->
 					<tr><th colspan="2"><span class="genmed"><b>{L_NMG_SELECT}</b></span></th></tr>
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed"><a href="{U_USERGROUPS}">{L_NMG_SELECT}</a></span></b></td>
+						<td class="row2"><b><span class="genmed"><a href="{U_USERGROUPS}">{L_NMG_SELECT}</a></span></b></td>
 						<td class="row1"><form action="{S_GROUPCP_ACTION}" name="post" method="post">&nbsp;{S_NMG_SELECT}<input type="submit" name="ug_add" value="{L_ADD_MEMBER}" class="mainoption" />{S_HIDDEN_FIELDS}</form></td>
 					</tr>
 					<!-- ENDIF -->
 					<tr>
-						<td class="row2" valign="top" width="30%"><b><span class="genmed">{L_INVISION_SIGNATURE}</span></b></td>
+						<td class="row2 tw30pct"><b><span class="genmed">{L_INVISION_SIGNATURE}</span></b></td>
 						<td class="row1"><span class="genmed">{INVISION_USER_SIG}</span></td>
 					</tr>
 				</table>
 			</td>
 		</tr>
-		<tr><td width="2"><img src="{SPACER}" width="2" alt="" /></td></tr>
+		<tr><td class="tw2px"><img src="{SPACER}" width="2" alt="" /></td></tr>
 		<tr>
-			<td width="50%" valign="top" class="forumline">
-				<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<td class="forumline tw50pct">
+				<table>
 					<tr><th colspan="2"><span class="genmed"><b>{L_INVISION_P_DETAILS}</b></span></th></tr>
 					<tr>
-						<td width="33%" class="row2"><b><span class="genmed">{L_INVISION_POSTS}</span></b></td>
-						<td width="64%" class="row1"><span class="genmed"><b>{POSTS}</b>&nbsp;-&nbsp;{INVISION_POST_PERCENT_STATS}</span></td>
+						<td class="tw33pct row2"><b><span class="genmed">{L_INVISION_POSTS}</span></b></td>
+						<td class="row1 tw64pct"><span class="genmed"><b>{POSTS}</b>&nbsp;-&nbsp;{INVISION_POST_PERCENT_STATS}</span></td>
 					</tr>
 					<!-- IF S_POSTS_SECTION -->
 					<tr>
@@ -153,12 +153,12 @@
 						<td class="row1"><span class="genmed">{INVISION_POST_DAY_STATS}</span></td>
 					</tr>
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{L_INVISION_MOST_ACTIVE}</span></b></td>
+						<td class="row2"><b><span class="genmed">{L_INVISION_MOST_ACTIVE}</span></b></td>
 						<td class="row1"><div class="genmed"><!-- IF INVISION_MOST_ACTIVE_FORUM_ID > 0 --><a href="{INVISION_MOST_ACTIVE_FORUM_URL}">{INVISION_MOST_ACTIVE_FORUM_NAME}</a><br />{L_INVISION_MOST_ACTIVE_POSTS}<!-- ELSE -->{L_NO_POSTS}<!-- ENDIF --></div></td>
 					</tr>
 					<!-- ENDIF -->
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{L_RECENT_USER_ACTIVITY}</span></b></td>
+						<td class="row2"><b><span class="genmed">{L_RECENT_USER_ACTIVITY}</span></b></td>
 						<td class="row1">
 							<!-- IF S_EXTRA_STATS_AUTH -->
 							<span class="genmed">[ <a href="{U_EXTRA_STATS}">{L_EXTRA_STATS}</a> ]</span><br />
@@ -180,12 +180,12 @@
 					<!-- END show_thanks_profile -->
 					<!-- IF FEEDBACK -->
 					<tr>
-						<td class="row2" valign="top" width="30%"><b><span class="genmed">{L_FEEDBACK_RECEIVED}</span></b></td>
+						<td class="row2 tw30pct"><b><span class="genmed">{L_FEEDBACK_RECEIVED}</span></b></td>
 						<td class="row1">{FEEDBACK}</td>
 					</tr>
 					<!-- ENDIF -->
 					<!-- IF S_ADMIN_MOD -->
-					<tr><th colspan="2" align="center">{L_MODERATOR_IP_INFORMATION}:</th></tr>
+					<tr><th colspan="2">{L_MODERATOR_IP_INFORMATION}:</th></tr>
 					<tr>
 						<td class="row2"><b><span class="genmed">{L_EMAIL_ADDRESS}</span></b></td>
 						<td class="row1 post-buttons"><span class="genmed"><a href="mailto:{USER_EMAIL_ADDRESS}">{USER_EMAIL_ADDRESS}</a></span></td>
@@ -201,9 +201,9 @@
 					<!-- ENDIF -->
 				</table>
 			</td>
-			<td width="2"><img src="{SPACER}" width="7" alt="" /></td>
-			<td width="50%" valign="top" class="forumline">
-				<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+			<td class="tw2px"><img src="{SPACER}" width="7" alt="" /></td>
+			<td class="forumline tw50pct">
+				<table>
 					<tr><th colspan="2"><span class="genmed"><b>{L_INVISION_A_STATS}</b></span></th></tr>
 					<tr>
 						<td class="row2"><b><span class="genmed">{L_JOINED}</span></b></td>
@@ -225,16 +225,16 @@
 					</tr>
 					<!-- BEGIN switch_upload_limits -->
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{L_UPLOAD_QUOTA}</span></b></td>
-						<td align="left" class="row2">
-							<table width="190" cellspacing="0" class="forumline">
+						<td class="row2"><b><span class="genmed">{L_UPLOAD_QUOTA}</span></b></td>
+						<td class="row2">
+							<table class="forumline tw200px">
 								<tr>
-									<td colspan="3" width="190" class="row2" nowrap="nowrap"><img src="{BAR_GRAPHIC_LEFT}" width="4" height="12" alt="" /><img src="{BAR_GRAPHIC_BODY}" width="{UPLOAD_LIMIT_IMG_WIDTH}" height="12" alt="{INBOX_LIMIT_PERCENT}" /><img src="{BAR_GRAPHIC_RIGHT}" width="4" height="12" alt="" /></td>
+									<td colspan="3" width="190" class="row2 tdnw"><img src="{BAR_GRAPHIC_LEFT}" width="4" height="12" alt="" /><img src="{BAR_GRAPHIC_BODY}" width="{UPLOAD_LIMIT_IMG_WIDTH}" height="12" alt="{INBOX_LIMIT_PERCENT}" /><img src="{BAR_GRAPHIC_RIGHT}" width="4" height="12" alt="" /></td>
 								</tr>
 								<tr>
-									<td width="33%" class="row3"><span class="gensmall"><span class="text_green">0%</span></span></td>
-									<td width="34%" class="row3 row-center"><span class="gensmall"><span class="text_blue">50%</span></span></td>
-									<td width="33%" class="row3 row-right"><span class="gensmall"><span class="text_red">100%</span></span></td>
+									<td class="tw33pct row3"><span class="gensmall"><span class="text_green">0%</span></span></td>
+									<td class="tw34pct row3 row-center"><span class="gensmall"><span class="text_blue">50%</span></span></td>
+									<td class="tw33pct row3 row-right"><span class="gensmall"><span class="text_red">100%</span></span></td>
 								</tr>
 							</table>
 							<span class="genmed">[{UPLOADED} / {QUOTA} / {PERCENT_FULL}]</span><br />
@@ -245,11 +245,11 @@
 					{CASH}
 					<!-- BEGIN trophy -->
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{trophy.TROPHY_TITLE}:</span></b></td>
+						<td class="row2"><b><span class="genmed">{trophy.TROPHY_TITLE}:</span></b></td>
 						<td class="row1"><span class="genmed">{trophy.PROFILE_TROPHY}</span></td>
 					</tr>
 					<tr>
-						<td class="row2" valign="top"><b><span class="genmed">{PROFILE_TITLE}</span></b></td>
+						<td class="row2"><b><span class="genmed">{PROFILE_TITLE}</span></b></td>
 						<td class="row1"><span class="genmed">{PROFILE_TIME}</span></td>
 					</tr>
 					<!-- END trophy -->
@@ -258,25 +258,25 @@
 		</tr>
 		</table>
 	</td>
-	<td height="1">&nbsp;</td>
+	<td class="th2px">&nbsp;</td>
 </tr>
-<tr><td height="2">&nbsp;</td></tr>
+<tr><td class="th2px">&nbsp;</td></tr>
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
 
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_EXTRA_PROFILE_INFO}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_EXTRA_PROFILE_INFO}</span>{IMG_THR}<table class="forumlinenb">
 <tr><td class="row1"><div class="post-text post-text-hide-flow">{SELFDES}</div></td></tr>
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
 
 <!-- BEGIN recent_pics_block -->
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_RECENT_PUBLIC_PICS}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_RECENT_PUBLIC_PICS}</span>{IMG_THR}<table class="forumlinenb">
 <!-- BEGIN no_pics -->
-<tr><td class="row1 row-center" colspan="{S_COLS}" height="50"><span class="gen">{L_NO_PICS}</span></td></tr>
+<tr><td class="row1 row-center th50px" colspan="{S_COLS}"><span class="gen">{L_NO_PICS}</span></td></tr>
 <!-- END no_pics -->
 <!-- BEGIN recent_pics -->
 <tr>
 	<!-- BEGIN recent_col -->
-	<td class="row1 row-center" width="{S_COL_WIDTH}">
-		<a href="{recent_pics_block.recent_pics.recent_col.U_PIC_DL}"{recent_pics_block.recent_pics.recent_col.PIC_PREVIEW_HS}><img src="{recent_pics_block.recent_pics.recent_col.THUMBNAIL}" alt="{recent_pics_block.recent_pics.recent_col.DESC}" title="{recent_pics_block.recent_pics.recent_col.DESC}" vspace="10" /></a>
+	<td class="row1 row-center" style="min-width: {S_COL_WIDTH}px;">
+		<a href="{recent_pics_block.recent_pics.recent_col.U_PIC_DL}"{recent_pics_block.recent_pics.recent_col.PIC_PREVIEW_HS}><img class="vs10px" src="{recent_pics_block.recent_pics.recent_col.THUMBNAIL}" alt="{recent_pics_block.recent_pics.recent_col.DESC}" title="{recent_pics_block.recent_pics.recent_col.DESC}" /></a>
 	</td>
 	<!-- END recent_col -->
 </tr>
@@ -305,6 +305,6 @@
 {profile_char.CHAR_PROFILE}
 <!-- END profile_char -->
 
-<table class="empty-table" width="100%" align="center" cellspacing="0"><tr><td align="right" class="nav"><br />{JUMPBOX}</td></tr></table>
+<table><tr><td class="nav tdalignr"><br />{JUMPBOX}</td></tr></table>
 
 <!-- INCLUDE overall_footer.tpl -->

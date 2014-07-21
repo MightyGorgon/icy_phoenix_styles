@@ -13,18 +13,18 @@
 </head>
 <body>
 <div id="global-wrapper">
-<span><a name="top" id="top"></a></span>
+<span><a id="top"></a></span>
 {TOP_HTML_BLOCK}
 <!-- IF GH_BLOCK --><!-- BEGIN gheader_blocks_row -->{gheader_blocks_row.CMS_BLOCK}<!-- END gheader_blocks_row --><!-- ENDIF -->
 <!-- IF PROFILE_VIEW --><script type="text/javascript">window.open('{U_PROFILE_VIEW}','_blank','height=800,width=250,resizable=yes');</script><!-- ENDIF -->
 
 {PAGE_BEGIN}
-<table id="forumtable" cellspacing="0" cellpadding="0">
+<table id="forumtable">
 <!-- IF GT_BLOCK -->
-<tr><td width="100%" colspan="3"><!-- BEGIN ghtop_blocks_row -->{ghtop_blocks_row.CMS_BLOCK}<!-- END ghtop_blocks_row --></td></tr>
+<tr><td colspan="3"><!-- BEGIN ghtop_blocks_row -->{ghtop_blocks_row.CMS_BLOCK}<!-- END ghtop_blocks_row --></td></tr>
 <!-- ENDIF -->
 <tr>
-	<td width="100%" colspan="3" valign="top">
+	<td class="tvalignt" colspan="3">
 		<div id="top_logo">
 
 		<div class="headerbar" style="height: 135px;">
@@ -60,10 +60,10 @@
 </tr>
 
 <!-- IF GB_BLOCK -->
-<tr><td width="100%" colspan="3"><!-- BEGIN ghbottom_blocks_row -->{ghbottom_blocks_row.CMS_BLOCK}<!-- END ghbottom_blocks_row --></td></tr>
+<tr><td colspan="3"><!-- BEGIN ghbottom_blocks_row -->{ghbottom_blocks_row.CMS_BLOCK}<!-- END ghbottom_blocks_row --></td></tr>
 <!-- ENDIF -->
 
-<!-- IF S_PAGE_NAV --><tr><td width="100%" colspan="3"><!-- INCLUDE breadcrumbs_main.tpl --></td></tr><!-- ENDIF -->
+<!-- IF S_PAGE_NAV --><tr><td colspan="3"><!-- INCLUDE breadcrumbs_main.tpl --></td></tr><!-- ENDIF -->
 
 <!-- INCLUDE overall_inc_body.tpl -->
 

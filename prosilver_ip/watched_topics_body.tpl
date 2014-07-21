@@ -24,7 +24,7 @@ function setCheckboxes(theForm, elementName, isChecked)
 </script>
 <form name="unwatch_form" id="unwatch_form" method="post" action="{S_FORM_ACTION}">
 <!-- INCLUDE profile_cpl_menu_inc_start.tpl -->
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_WATCHED_TOPICS}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_WATCHED_TOPICS}</span>{IMG_THR}<table class="forumlinenb">
 <tr>
 	<th>&nbsp;</th>
 	<th>{L_FORUM}</th>

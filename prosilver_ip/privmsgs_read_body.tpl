@@ -14,21 +14,21 @@ ob_start();
 <form method="post" action="{S_PRIVMSGS_ACTION}&amp;{POST_POST_URL}={PM_ID}" name="post">
 {S_HIDDEN_FIELDS}
 <input type="hidden" name="post_time" value="<?php echo time(); ?>" />
-{IMG_THL}{IMG_THC}<span class="forumlink"><?php echo $lang['Post_a_reply']; ?></span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink"><?php echo $lang['Post_a_reply']; ?></span>{IMG_THR}<table class="forumlinenb">
 <tr>
 	<td class="row1" width="200"><span class="gen"><b>{L_TO}</b></span></td>
-	<td class="row2" width="100%"><input type="text" class="post" name="username" size="25" maxlength="25" tabindex="1" value="{RECIPIENT_QQ}" /></td>
+	<td class="row2 tw100pct"><input type="text" class="post" name="username" size="25" maxlength="25" tabindex="1" value="{RECIPIENT_QQ}" /></td>
 </tr>
 <tr>
-	<td class="row1" width="200" nowrap="nowrap"><span class="gen"><b><?php echo $lang['Subject']; ?>:</b></span></td>
-	<td class="row2" width="100%"><input type="text" name="subject" size="45" maxlength="120" style="width: 98%;" tabindex="2" class="post" value="{qr_subject}" /></td>
+	<td class="row1 tw200px tdnw"><span class="gen"><b><?php echo $lang['Subject']; ?>:</b></span></td>
+	<td class="row2 tw100pct"><input type="text" name="subject" size="45" maxlength="120" style="width: 98%;" tabindex="2" class="post" value="{qr_subject}" /></td>
 </tr>
 <tr>
-	<td class="row1" width="200" nowrap="nowrap"><span class="gen"><b><?php echo $lang['Message_body']; ?>:<br /><img src="{SPACER}" width="200" height="1" alt="" /></b></span></td>
-	<td class="row2" width="100%"><div class="message-box"><textarea name="message" rows="15" cols="35" tabindex="3"></textarea></div></td>
+	<td class="row1 tw200px tdnw"><span class="gen"><b><?php echo $lang['Message_body']; ?>:<br /><img src="{SPACER}" width="200" height="1" alt="" /></b></span></td>
+	<td class="row2 tw100pct"><div class="message-box"><textarea name="message" rows="15" cols="35" tabindex="3"></textarea></div></td>
 </tr>
 <tr>
-	<td class="row1" valign="top" nowrap="nowrap"><span class="gen"><b><?php echo $lang['Options']; ?>:</b></span></td>
+	<td class="row1 tdnw"><span class="gen"><b><?php echo $lang['Options']; ?>:</b></span></td>
 	<td class="row2">
 	<span class="genmed">
 	<?php
@@ -74,12 +74,12 @@ $this->vars['CA_QUICK_REPLY_FORM'] = $str;
 ?>
 {CPL_MENU_OUTPUT}
 <div class="forumline" style="margin-left: 5%; margin-right: 5%;">
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<table>
 <tr>
-	<td width="25%" align="center">{INBOX_IMG}<br /><b><span class="topiclink">{INBOX}</span></b></td>
-	<td width="25%" align="center">{SENTBOX_IMG}<br /><b><span class="topiclink">{SENTBOX}</span></b></td>
-	<td width="25%" align="center">{OUTBOX_IMG}<br /><b><span class="topiclink">{OUTBOX}</span></b></td>
-	<td width="25%" align="center">{SAVEBOX_IMG}<br /><b><span class="topiclink">{SAVEBOX}</span></b></td>
+	<td class="tdalignc tw25pct">{INBOX_IMG}<br /><b><span class="topiclink">{INBOX}</span></b></td>
+	<td class="tdalignc tw25pct">{SENTBOX_IMG}<br /><b><span class="topiclink">{SENTBOX}</span></b></td>
+	<td class="tdalignc tw25pct">{OUTBOX_IMG}<br /><b><span class="topiclink">{OUTBOX}</span></b></td>
+	<td class="tdalignc tw25pct">{SAVEBOX_IMG}<br /><b><span class="topiclink">{SAVEBOX}</span></b></td>
 </tr>
 </table>
 </div>
@@ -96,10 +96,10 @@ message[{privmsgs_id}] = " user=\"{RECIPIENT_QQ}\"]{PLAIN_MESSAGE}[/";
 {S_HIDDEN_FIELDS}
 
 <!-- IF REPLY_PM_URL --><div class="buttons"><div class="pmreply-button"><a href="{REPLY_PM_URL}"><span>{L_REPLY_PM}</span></a></div><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div></div><!-- ENDIF -->
-<br clear="all" />
-{IMG_THL}{IMG_THC}<span class="forumlink">{POST_SUBJECT}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+<br class="clear" />
+{IMG_THL}{IMG_THC}<span class="forumlink">{POST_SUBJECT}</span>{IMG_THR}<table class="forumlinenb">
 	<tr>
-		<th width="150">{L_AUTHOR}</th>
+		<th class="tw150px">{L_AUTHOR}</th>
 		<th>{L_MESSAGE}</th>
 	</tr>
 	<tr>
@@ -125,9 +125,9 @@ message[{privmsgs_id}] = " user=\"{RECIPIENT_QQ}\"]{PLAIN_MESSAGE}[/";
 				<!-- IF SKYPE_URL --><li class="skype-icon"><a href="{SKYPE_URL}"><span>{L_SKYPE}</span></a></li><!-- ENDIF -->
 				<!-- IF YIM_URL --><li class="yahoo-icon"><a href="{YIM_URL}"><span>{L_YIM}</span></a></li><!-- ENDIF -->
 			</ul>
-			<br clear="all" />
+			<br class="clear" />
 		</td>
-		<td class="row-post" width="100%">
+		<td class="row-post tw100pct">
 			<!-- IF QUOTE_PM_URL or EDIT_PM_URL -->
 			<div style="float: right;">
 			<ul class="profile-icons">
@@ -171,10 +171,10 @@ message[{privmsgs_id}] = " user=\"{RECIPIENT_QQ}\"]{PLAIN_MESSAGE}[/";
 	</tr>
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
 
-<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table>
 <tr>
-	<td align="left"><!-- IF REPLY_PM_URL --><div class="buttons"><div class="pmreply-button"><a href="{REPLY_PM_URL}"><span>{L_REPLY_PM}</span></a></div><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div></div><!-- ELSE -->&nbsp;<!-- ENDIF --></td>
-	<td align="right" valign="top" nowrap="nowrap"><span class="gensmall">{S_TIMEZONE}</span></td>
+	<td><!-- IF REPLY_PM_URL --><div class="buttons"><div class="pmreply-button"><a href="{REPLY_PM_URL}"><span>{L_REPLY_PM}</span></a></div><div class="quickreply-button"><a href="javascript:showQuickEditor();"><span>{L_QUICK_REPLY}</span></a></div></div><!-- ELSE -->&nbsp;<!-- ENDIF --></td>
+	<td class="tdalignr tdnw"><span class="gensmall">{S_TIMEZONE}</span></td>
 </tr>
 </table>
 </form>
@@ -182,8 +182,8 @@ message[{privmsgs_id}] = " user=\"{RECIPIENT_QQ}\"]{PLAIN_MESSAGE}[/";
 </td>
 </tr>
 </table>
-<table class="empty-table" width="100%" align="center" cellspacing="0">
-<tr><td valign="top" align="right">{JUMPBOX}</td></tr>
+<table>
+<tr><td class="tdalignr">{JUMPBOX}</td></tr>
 </table>
 
 <!-- INCLUDE overall_footer.tpl -->

@@ -16,7 +16,7 @@
 	</div>
 </div>{IMG_TBR}
 
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_RECENT_TITLE}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_RECENT_TITLE}</span>{IMG_THR}<table class="forumlinenb">
 <tr>
 	<th>&nbsp;</th>
 	<th><a href="{U_SORT_CAT}">{L_FORUM}</a></th>
@@ -40,14 +40,14 @@
 </tr>
 <!-- END recent -->
 <!-- BEGIN switch_no_topics -->
-<tr><td colspan="7" class="row1 row-center"><span class="gen"><i>{L_NO_TOPICS}</i></span></td></tr>
+<tr><td class="row1 row-center" colspan="7"><span class="gen"><i>{L_NO_TOPICS}</i></span></td></tr>
 <!-- END switch_no_topics -->
 <tr><td class="cat" colspan="7">&nbsp;</td></tr>
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
-<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table>
 <tr>
-	<td align="left" valign="top"><span class="gensmall">{PAGE_NUMBER}</span></td>
-	<td align="right" valign="top" nowrap="nowrap"><span class="pagination">{PAGINATION}</span><br /><span class="gensmall">{S_TIMEZONE}</span></td>
+	<td><span class="gensmall">{PAGE_NUMBER}</span></td>
+	<td class="tdalignr tdnw"><span class="pagination">{PAGINATION}</span><br /><span class="gensmall">{S_TIMEZONE}</span></td>
 </tr>
 </table>
 

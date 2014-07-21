@@ -27,16 +27,16 @@ function attach_rules(forum_id)
 
 <!-- BEGIN switch_privmsg -->
 {CPL_MENU_OUTPUT}
-<table width="100%" align="center" cellspacing="0" cellpadding="0">
+<table>
 <tr>
-	<td width="100%" align="center" style="vertical-align: top;">
+	<td class="tw100pct tdalignc tvalignt">
 		<div class="forumline" style="margin-left: 5%; margin-right: 5%;">
-		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<table>
 		<tr>
-			<td width="25%" align="center">{INBOX_IMG}<br /><span class="forumlink">{INBOX}</span></td>
-			<td width="25%" align="center">{SENTBOX_IMG}<br /><span class="forumlink">{SENTBOX}</span></td>
-			<td width="25%" align="center">{OUTBOX_IMG}<br /><span class="forumlink">{OUTBOX}</span></td>
-			<td width="25%" align="center">{SAVEBOX_IMG}<br /><span class="forumlink">{SAVEBOX}</span></td>
+			<td class="tdalignc tw25pct">{INBOX_IMG}<br /><span class="forumlink">{INBOX}</span></td>
+			<td class="tdalignc tw25pct">{SENTBOX_IMG}<br /><span class="forumlink">{SENTBOX}</span></td>
+			<td class="tdalignc tw25pct">{OUTBOX_IMG}<br /><span class="forumlink">{OUTBOX}</span></td>
+			<td class="tdalignc tw25pct">{SAVEBOX_IMG}<br /><span class="forumlink">{SAVEBOX}</span></td>
 		</tr>
 		</table>
 		</div>
@@ -46,15 +46,15 @@ function attach_rules(forum_id)
 <!-- END switch_privmsg -->
 
 <!-- BEGIN switch_prv_msg_review -->
-<table class="forumline" width="100%" cellspacing="0">
+<table class="forumline">
 <tr><td class="row-header" colspan="2"><span>{switch_prv_msg_review.PRIVATE_MSG_TITLE}</span></td></tr>
-<tr><td align="left" valign="top" colspan="2" width="65%" class="row2"><div class="post-text post-text-hide-flow">{switch_prv_msg_review.PRIVATE_MSG_REVIEW}</div></td></tr>
+<tr><td class="row2 tw65pct" colspan="2"><div class="post-text post-text-hide-flow">{switch_prv_msg_review.PRIVATE_MSG_REVIEW}</div></td></tr>
 </table>
 <!-- END switch_prv_msg_review -->
 
 <form action="{S_POST_ACTION}" method="post" name="post" onsubmit="return checkForm(this);" {S_FORM_ENCTYPE}>
 <!-- BEGIN save_draft_confirm -->
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_DRAFTS}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_DRAFTS}</span>{IMG_THR}<table class="forumlinenb">
 <tr><td class="row1g">{L_DRAFT_CONFIRM}<br /><br /><input type="submit" name="draft_confirm" value="{L_YES}" class="mainoption" /></td></tr>
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
 <br />
@@ -75,7 +75,7 @@ function attach_rules(forum_id)
 <br />
 <!-- ENDIF -->
 
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_POST_A}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_POST_A}</span>{IMG_THR}<table class="forumlinenb">
 <!-- BEGIN switch_username_select -->
 <tr>
 	<td class="row1"><span class="gen"><b>{L_USERNAME}</b></span></td>
@@ -125,15 +125,15 @@ function attach_rules(forum_id)
 </tr>
 <!-- END switch_news_cat -->
 <tr>
-	<td class="row1" width="22%" valign="top">
-		<table width="100%" border="0" cellspacing="0" cellpadding="1">
+	<td class="row1 tw22pct">
+		<table class="p2px">
 			<tr><td><span class="gen"><b>{L_MESSAGE_BODY}</b></span></td></tr>
 			<tr>
-				<td valign="middle" align="center"><br />
+				<td class="tdalignc tvalignm"><br />
 					<!-- Begin Lo-Fi Mod -->
 					<?php
 					global $lofi;
-					if ( !$lofi )
+					if (!$lofi)
 					{
 					?>
 					<!-- End Lo-Fi Mod -->
@@ -148,7 +148,7 @@ function attach_rules(forum_id)
 			</tr>
 		</table>
 	</td>
-	<td class="row2" width="78%" valign="top">
+	<td class="row2 tw78pct">
 		{BBCB_MG}
 		<div class="message-box"><textarea id="message" name="message" rows="15" cols="76" tabindex="4" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);">{MESSAGE}</textarea></div>
 	</td>
@@ -184,7 +184,7 @@ function attach_rules(forum_id)
 	</td>
 </tr>
 <tr>
-	<td class="row1" valign="top"><span class="gen"><b>{L_OPTIONS}</b></span><br /><span class="gensmall">{HTML_STATUS}<br />{BBCODE_STATUS}<br />{SMILIES_STATUS}</span></td>
+	<td class="row1"><span class="gen"><b>{L_OPTIONS}</b></span><br /><span class="gensmall">{HTML_STATUS}<br />{BBCODE_STATUS}<br />{SMILIES_STATUS}</span></td>
 	<td class="row2">
 		<div class="genmed">
 			<!-- BEGIN switch_show_portal -->
@@ -231,12 +231,12 @@ function attach_rules(forum_id)
 <!-- BEGIN switch_type_cal -->
 <tr><th colspan="2">{L_CALENDAR_TITLE}</th></tr>
 <tr>
-	<td class="row1" valign="top"><span class="gen"><b>{L_CALENDAR_TITLE}</b></span></td>
-	<td valign="top" class="row1">
+	<td class="row1"><span class="gen"><b>{L_CALENDAR_TITLE}</b></span></td>
+	<td class="row1">
 		<table cellpadding="2" cellspacing="0" width="100%" border="0">
 			<tr>
-				<td align="right" nowrap="nowrap"><span><b>{L_CALENDAR_TITLE}:&nbsp;</b></span></td>
-				<td align="left" width="100%">
+				<td class="tdalignr tdnw"><span><b>{L_CALENDAR_TITLE}:&nbsp;</b></span></td>
+				<td class="tw100pct">
 					<span class="genmed">
 						{S_CALENDAR_DAY}{S_CALENDAR_MONTH}{S_CALENDAR_YEAR}&nbsp;
 						<a href="#" class="genmed" onclick="document.post.topic_calendar_day.value={TODAY_DAY};document.post.topic_calendar_month.value={TODAY_MONTH};document.post.topic_calendar_year.value={TODAY_YEAR};" />{L_TODAY}</a>
@@ -244,8 +244,8 @@ function attach_rules(forum_id)
 				</td>
 			</tr>
 			<tr>
-				<td align="right" nowrap="nowrap"><span><b>{L_TIME}:&nbsp;</b></span></td>
-				<td align="left" width="100%">
+				<td class="tdalignr tdnw"><span><b>{L_TIME}:&nbsp;</b></span></td>
+				<td class="tw100pct">
 					<span class="genmed">
 						<input name="topic_calendar_hour" type="text" maxlength="2" size="3" value="{CALENDAR_HOUR}" class="post" />&nbsp;{L_HOURS}&nbsp;&nbsp;
 						<input name="topic_calendar_min" type="text" maxlength="2" size="3" value="{CALENDAR_MIN}" class="post" />&nbsp;{L_MINUTES}
@@ -253,8 +253,8 @@ function attach_rules(forum_id)
 				</td>
 			</tr>
 			<tr>
-				<td align="right" nowrap="nowrap"><span><b>{L_CALENDAR_DURATION}:&nbsp;</b></span></td>
-				<td align="left" width="100%">
+				<td class="tdalignr tdnw"><span><b>{L_CALENDAR_DURATION}:&nbsp;</b></span></td>
+				<td class="tw100pct">
 					<span class="genmed">
 						<input name="topic_calendar_duration_day" type="text" maxlength="5" size="3" value="{CALENDAR_DURATION_DAY}" class="post" />&nbsp;{L_DAYS}&nbsp;&nbsp;
 						<input name="topic_calendar_duration_hour" type="text" maxlength="5" size="3" value="{CALENDAR_DURATION_HOUR}" class="post" />&nbsp;{L_HOURS}&nbsp;&nbsp;

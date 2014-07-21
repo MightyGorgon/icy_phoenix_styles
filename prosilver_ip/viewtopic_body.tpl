@@ -1,7 +1,7 @@
 <!-- INCLUDE viewtopic_inc_js.tpl -->
 
 <!-- INCLUDE breadcrumbs_vt.tpl -->
-<br clear="all" />
+<br class="clear" />
 
 <!-- IF S_FORUM_RULES -->
 <div class="navbar rules-box" style="margin-top: 5px;">
@@ -15,9 +15,9 @@
 <br />
 <!-- ENDIF -->
 
-<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table>
 <tr>
-	<td align="left" valign="bottom">
+	<td class="tdalignl tvalignb">
 	<div class="topic-title-hide-flow-header"><h2><a href="{U_VIEW_TOPIC_BASE}" style="text-decoration: none;">{TOPIC_TITLE}</a></h2></div><br />
 	<!-- IF S_TOPIC_TAGS and TOPIC_TAGS -->
 	<div><span class="gensmall"><b>{L_TOPIC_TAGS}</b>:&nbsp;{TOPIC_TAGS}</span></div><br />
@@ -31,7 +31,7 @@
 	&nbsp;
 	<!-- ENDIF -->
 	</td>
-	<td align="right" valign="bottom">
+	<td class="tdalignr tvalignb">
 		<span class="gen">{PAGE_NUMBER}</span><br />
 		<span class="pagination">{PAGINATION}</span><br />
 		<!-- IF S_EXTENDED_PAGINATION -->
@@ -42,13 +42,13 @@
 </tr>
 </table>
 
-<br clear="all" />
+<br class="clear" />
 
 <!-- IF VIEWTOPIC_BANNER_TOP -->
 <div class="post-msg row3" style="border-width: 0px; margin-top: 5px;">
 	<div class="inner"><span class="corners-top"><span></span></span>
 
-	<div class="center-block-text" style="overflow:auto;">{VIEWTOPIC_BANNER_TOP}</div>
+	<div class="center-block-text" style="overflow: auto;">{VIEWTOPIC_BANNER_TOP}</div>
 
 	<span class="corners-bottom"><span></span></span></div>
 </div>
@@ -187,7 +187,7 @@
 
 		<div class="post-bottom-right">
 		<!-- IF S_POSTS_LIKES -->
-		<span class="gensmall"><span id="like_s_p{postrow.U_POST_ID}"><!-- IF postrow.POST_LIKE_TEXT -->{postrow.POST_LIKE_TEXT}&nbsp;&bull;<!-- ENDIF -->&nbsp;</span><!-- IF S_LOGGED_IN and not postrow.S_OWN_POST --><a href="#" id="like_a_p{postrow.U_POST_ID}" style="text-decoration: none;" onclick="post_like_ajax({postrow.U_TOPIC_ID}, {postrow.U_POST_ID}); return false;"><!-- IF postrow.READER_LIKES -->{L_UNLIKE}<!-- ELSE -->{L_LIKE}<!-- ENDIF --></a>&nbsp;&bull;<!-- ENDIF -->&nbsp;{postrow.SINGLE_POST_SHARE}</span><br clear="all" />
+		<span class="gensmall"><span id="like_s_p{postrow.U_POST_ID}"><!-- IF postrow.POST_LIKE_TEXT -->{postrow.POST_LIKE_TEXT}&nbsp;&bull;<!-- ENDIF -->&nbsp;</span><!-- IF S_LOGGED_IN and not postrow.S_OWN_POST --><a href="#" id="like_a_p{postrow.U_POST_ID}" style="text-decoration: none;" onclick="post_like_ajax({postrow.U_TOPIC_ID}, {postrow.U_POST_ID}); return false;"><!-- IF postrow.READER_LIKES -->{L_UNLIKE}<!-- ELSE -->{L_LIKE}<!-- ENDIF --></a>&nbsp;&bull;<!-- ENDIF -->&nbsp;{postrow.SINGLE_POST_SHARE}</span><br class="clear" />
 		<!-- ENDIF -->
 		<div style="float: right; vertical-align: bottom; text-align: right;">
 		<ul class="profile-icons">
@@ -228,16 +228,16 @@
 <div class="post-msg row3" style="border-width: 0px; margin-top: 5px;">
 	<div class="inner"><span class="corners-top"><span></span></span>
 
-	<div class="center-block-text" style="overflow:auto;">{VIEWTOPIC_BANNER_BOTTOM}</div>
+	<div class="center-block-text" style="overflow: auto;">{VIEWTOPIC_BANNER_BOTTOM}</div>
 
 	<span class="corners-bottom"><span></span></span></div>
 </div>
 <!-- ENDIF -->
 
 <hr />
-<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table>
 <tr>
-	<td align="left" valign="top">
+	<td>
 	<div class="buttons">
 		<!-- IF not S_BOT -->
 		<div class="newtopic-button"><a href="{U_POST_NEW_TOPIC}"><span>{L_POST_NEW_TOPIC}</span></a></div>
@@ -248,20 +248,20 @@
 		<!-- ENDIF -->
 	</div>
 	</td>
-	<td align="right" valign="top">
+	<td class="tdalignr">
 		<span class="gen">{PAGE_NUMBER}</span><br />
 		<span class="pagination">{PAGINATION}</span>
 	</td>
 </tr>
 </table>
 
-<br clear="all" />
+<br class="clear" />
 
 <!-- IF not S_BOT -->
 {CA_QUICK_REPLY_FORM}
 <!-- ENDIF -->
 
-<br clear="all" />
+<br class="clear" />
 
 <form method="post" action="{S_POST_DAYS_ACTION}">
 <fieldset class="display-options" style="margin-top: 0; border-width: 0px;"><label>{L_DISPLAY_POSTS}:&nbsp;{S_SELECT_SORT_DAYS}&nbsp;{S_SELECT_SORT_KEY}&nbsp;{S_SELECT_SORT_DIR}&nbsp;<input type="submit" value="{L_GO}" class="liteoption jumpbox" name="submit" /></label></fieldset>
@@ -271,13 +271,13 @@
 <!-- BEGIN switch_topic_useful -->
 <a id="ratingblock"></a>
 <div id="rate_block_h" style="display: none;">
-{IMG_THL}{IMG_THC}<img class="max-min-right" style="{SHOW_HIDE_PADDING}" src="{IMG_MAXIMISE}" onclick="ShowHide('rate_block','rate_block_h','rate_block');" alt="{L_SHOW}" /><span class="forumlink">{L_TOPIC_RATING}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<img class="max-min-right" style="{SHOW_HIDE_PADDING}" src="{IMG_MAXIMISE}" onclick="ShowHide('rate_block','rate_block_h','rate_block');" alt="{L_SHOW}" /><span class="forumlink">{L_TOPIC_RATING}</span>{IMG_THR}<table class="forumlinenb">
 <tr><td class="row1g row-center">&nbsp;</td></tr>
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
 </div>
 
 <div id="rate_block">
-{IMG_THL}{IMG_THC}<img class="max-min-right" style="{SHOW_HIDE_PADDING}" src="{IMG_MINIMISE}" onclick="ShowHide('rate_block','rate_block_h','rate_block');" alt="{L_HIDE}" /><span class="forumlink">{L_TOPIC_RATING}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<img class="max-min-right" style="{SHOW_HIDE_PADDING}" src="{IMG_MINIMISE}" onclick="ShowHide('rate_block','rate_block_h','rate_block');" alt="{L_HIDE}" /><span class="forumlink">{L_TOPIC_RATING}</span>{IMG_THR}<table class="forumlinenb">
 {RATING_VIEWTOPIC}
 <!-- BEGIN social_bookmarks -->
 <tr><th colspan="4">{L_SHARE_TOPIC}</th></tr>
@@ -308,16 +308,16 @@ if(GetCookie(tmp) == '2')
 <hr />
 
 <!-- IF not S_BOT -->
-<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
-<tr><td align="left" valign="top" class="gensmall" width="100%"><span class="gensmall"><br />{TOTAL_USERS_ONLINE}<br />{LOGGED_IN_USER_LIST}</span><br /><br /></td></tr>
+<table>
+<tr><td class="gensmall tw100pct"><span class="gensmall"><br />{TOTAL_USERS_ONLINE}<br />{LOGGED_IN_USER_LIST}</span><br /><br /></td></tr>
 </table>
 <!-- ENDIF -->
 
-<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table>
 <tr>
-	<td align="left" valign="top" class="gensmall" width="40%">
+	<td class="gensmall tw40pct">
 		{IMG_TBL}<div id="topic_auth_list_h" style="display: none;">
-			<table width="100%" cellspacing="0" cellpadding="0">
+			<table>
 			<tr>
 				<td>
 					<div class="max-min-right" style="{SHOW_HIDE_PADDING}"><img src="{IMG_MAXIMISE}" onclick="ShowHide('topic_auth_list','topic_auth_list_h','topic_auth_list');" alt="" />&nbsp;</div><span class="forumlink">{L_PERMISSIONS_LIST}</span>
@@ -326,7 +326,7 @@ if(GetCookie(tmp) == '2')
 			</table>
 		</div>
 		<div id="topic_auth_list">
-			<table width="100%" cellspacing="0" cellpadding="0">
+			<table>
 			<tr>
 				<td>
 					<div class="max-min-right" style="{SHOW_HIDE_PADDING}"><img src="{IMG_MINIMISE}" onclick="ShowHide('topic_auth_list','topic_auth_list_h','topic_auth_list');" alt="" />&nbsp;</div><span class="forumlink">{L_PERMISSIONS_LIST}</span><hr class="cell-title" />
@@ -345,7 +345,7 @@ if(GetCookie(tmp) == '2')
 		//-->
 		</script>
 	</td>
-	<td align="right" valign="top">
+	<td class="tdalignr">
 		<!-- IF not S_BOT and S_TMOD_BUTTONS -->
 		<!-- INCLUDE viewtopic_admin.tpl -->
 		<!-- ENDIF -->

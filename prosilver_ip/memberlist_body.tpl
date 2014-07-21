@@ -5,10 +5,10 @@
 <!-- ENDIF -->
 
 <form method="post" action="{S_MODE_ACTION}">
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_SORT}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_SORT}</span>{IMG_THR}<table class="forumlinenb">
 <tr><td class="cat" width="100%"><!-- IF S_ADMIN --><b><a href="{U_FIND_MEMBER}" class="genmed">{L_FIND_MEMBER}</a></b>&nbsp;&bull;&nbsp;<!-- ENDIF --><!-- BEGIN alphanumsearch -->&nbsp;<b><a href="{alphanumsearch.SEARCH_LINK}" class="genmed">{alphanumsearch.SEARCH_TERM}</a></b>&nbsp;<!-- END alphanumsearch --></td></tr>
 <tr>
-	<td class="row1 row-center" align="center" nowrap="nowrap">
+	<td class="row1 row-center tdnw">
 		<span class="genmed">
 			{L_USERS_PER_PAGE}&nbsp;<input type="text" name="users_per_page" value="{S_USERS_PER_PAGE}" size="5" class="post" />&nbsp;
 			{L_SELECT_SORT_METHOD}:&nbsp;{S_MODE_SELECT}&nbsp;&nbsp;{L_ORDER}:&nbsp;{S_ORDER_SELECT}&nbsp;&nbsp;
@@ -19,15 +19,15 @@
 <tr><td class="row1"><span class="gensmall"><b>{L_LEGEND}:&nbsp;</b>{GROUPS_LIST_LEGEND}</span></td></tr>
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
 <br />
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_MEMBERLIST}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_MEMBERLIST}</span>{IMG_THR}<table class="forumlinenb">
 <tr>
-	<th width="30">#</th>
+	<th class="tw30px">#</th>
 	<th>{L_USERNAME}</th>
 	<th>{L_CONTACTS}</th>
 	<th>{L_USER_RANK}</th>
-	<th width="50">{L_POSTS}</th>
+	<th class="tw50px">{L_POSTS}</th>
 	<!-- BEGIN cashrow -->
-	<th nowrap="nowrap">{cashrow.NAME}</th>
+	<th class="tdnw">{cashrow.NAME}</th>
 	<!-- END cashrow -->
 	<th>{L_FROM}</th>
 	<th>{L_JOINED}</th>
@@ -43,10 +43,10 @@
 <tr class="{memberrow.ROW_CLASS}h">
 	<td class="{memberrow.ROW_CLASS} row-center" style="background: none;" nowrap="nowrap">{memberrow.ROW_NUMBER}</td>
 	<td class="{memberrow.ROW_CLASS} row-center" style="background: none;" height="100%">
-		<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+		<table>
 		<tr>
-			<td align="left" valign="middle">{memberrow.AVATAR_IMG}</td>
-			<td align="left" width="100%" nowrap="nowrap" style="text-align: left;">&nbsp;{memberrow.USERNAME}&nbsp;{memberrow.POSTER_GENDER}&nbsp;{memberrow.AGE}{memberrow.STYLE}</td>
+			<td class="tvalignm">{memberrow.AVATAR_IMG}</td>
+			<td class="tw100pct tdalignl tdnw">&nbsp;{memberrow.USERNAME}&nbsp;{memberrow.POSTER_GENDER}&nbsp;{memberrow.AGE}{memberrow.STYLE}</td>
 		</tr>
 		</table>
 	</td>
@@ -72,7 +72,7 @@
 <!-- END memberrow -->
 <tr>
 	<td class="cat" width="100%" colspan="{NUMCOLS}">
-		<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+		<table>
 		<tr>
 			<!-- BEGIN alphanumsearch -->
 			<td align="center" width="{alphanumsearch.SEARCH_SIZE}">
@@ -86,14 +86,14 @@
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
 </form>
 
-<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table>
 <tr>
-	<td align="left"><span class="pagination">{PAGINATION}</span></td>
-	<td align="right" valign="top" nowrap="nowrap"><span class="genmed">&nbsp;</span></td>
+	<td><span class="pagination">{PAGINATION}</span></td>
+	<td class="tdalignr tdnw"><span class="genmed">&nbsp;</span></td>
 </tr>
 <tr>
-	<td align="left"><span class="gensmall">{PAGE_NUMBER}</span></td>
-	<td valign="top" align="right">{JUMPBOX}</td>
+	<td><span class="gensmall">{PAGE_NUMBER}</span></td>
+	<td class="tdalignr">{JUMPBOX}</td>
 </tr>
 </table>
 

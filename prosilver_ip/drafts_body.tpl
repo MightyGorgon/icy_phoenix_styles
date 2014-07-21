@@ -27,14 +27,14 @@ function setCheckboxes(theForm, elementName, isChecked)
 <!-- INCLUDE profile_cpl_menu_inc_start.tpl -->
 
 <!-- BEGIN switch_drafts -->
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_DRAFTS}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_DRAFTS}</span>{IMG_THR}<table class="forumlinenb">
 <tr>
-	<th width="4%">&nbsp;</th>
+	<th class="tw4pct">&nbsp;</th>
 	<th width="28%">{L_DRAFTS_CATEGORY}</th>
 	<th width="38%">{L_DRAFTS_SUBJECT}</th>
-	<th width="8%">{L_DRAFTS_ACTION}</th>
-	<th width="20%">{L_DATE}</th>
-	<th width="2%">&nbsp;</th>
+	<th class="tw8pct">{L_DRAFTS_ACTION}</th>
+	<th class="tw20pct">{L_DATE}</th>
+	<th class="tw2pct">&nbsp;</th>
 </tr>
 <!-- END switch_drafts -->
 <!-- BEGIN draft_row -->
@@ -53,7 +53,7 @@ function setCheckboxes(theForm, elementName, isChecked)
 <div align="right"><span class="pagination">{PAGINATION}</span></div>
 <!-- END switch_drafts -->
 <!-- BEGIN switch_no_drafts -->
-{IMG_THL}{IMG_THC}<span class="forumlink">{L_DRAFTS}</span>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<span class="forumlink">{L_DRAFTS}</span>{IMG_THR}<table class="forumlinenb">
 <tr><td class="row1 row-center"><br /><br /><span class="gen">{L_NO_DRAFTS}</span><br /><br /><br /></td></tr>
 <tr><td class="spaceRow"><img src="{SPACER}" width="1" height="3" alt="" /></td></tr>
 <tr><td class="catBottom">&nbsp;&nbsp;</td></tr>

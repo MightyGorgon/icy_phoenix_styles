@@ -2,9 +2,9 @@
 
 <h2 style="text-align: left;"><a href="{U_VIEW_FORUM}" style="text-decoration: none;">{FORUM_NAME}</a></h2>
 
-<table class="empty-table" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table>
 <tr>
-	<td align="left" valign="bottom" width="70%">
+	<td class="tw70pct tvalignb">
 		<!-- IF not S_BOT -->
 		<span class="gensmall">{TOTAL_USERS_ONLINE}&nbsp;</span><br /><span class="gensmall">{LOGGED_IN_USER_LIST}&nbsp;</span><br /><span class="gensmall">{BOT_LIST}&nbsp;</span><br />
 		<div class="buttons"><!-- IF IS_LOCKED --><div class="locked-button"><!-- ELSE --><div class="newtopic-button"><!-- ENDIF --><a href="{U_POST_NEW_TOPIC}"><span>{L_POST_NEW_TOPIC}</span></a></div></div>
@@ -12,7 +12,7 @@
 		&nbsp;
 		<!-- ENDIF -->
 	</td>
-	<td align="right" valign="bottom">
+	<td class="tdalignr tvalignb">
 		<span class="gen">{PAGE_NUMBER}</span><br />
 		<span class="pagination">{PAGINATION}</span><br />
 		<!-- IF S_EXTENDED_PAGINATION -->
@@ -25,28 +25,28 @@
 {BOARD_INDEX}
 
 <form method="post" action="{S_POST_DAYS_ACTION}" style="display:inline;">
-{IMG_THL}{IMG_THC}<a href="{U_VIEW_FORUM}" class="forumlink">{FORUM_NAME}</a>{IMG_THR}<table class="forumlinenb" width="100%" cellspacing="0" cellpadding="0">
+{IMG_THL}{IMG_THC}<a href="{U_VIEW_FORUM}" class="forumlink">{FORUM_NAME}</a>{IMG_THR}<table class="forumlinenb">
 <!-- IF VIEWFORUM_BANNER_TOP -->
 <tr><td class="row3 row-center" colspan="5">{VIEWFORUM_BANNER_TOP}</td></tr>
 <!-- ENDIF -->
 <!-- IF S_SHOW_ALPHA_BAR -->
 <tr>
-	<td class="cat" align="center" valign="middle" colspan="5">
+	<td class="cat tdalignc tvalignm" colspan="5">
 	<span class="gensmall">{L_SORT_TOPICS}:{DIVIDER}<a href="{U_NEWEST}">{L_SORT_TOPICS_NEWEST}</a>{DIVIDER}<a href="{U_OLDEST}">{L_SORT_TOPICS_OLDEST}</a>{DIVIDER}<a href="{U_AZ}">A-Z</a>{DIVIDER}<a href="{U_ZA}" >Z-A</a>{DIVIDER}<!-- BEGIN alphabetical_sort --><a href="{alphabetical_sort.U_LETTER}" >{alphabetical_sort.LETTER}</a>{alphabetical_sort.DIVIDER}<!-- END alphabetical_sort -->{DIVIDER}</span>
 	</td>
 </tr>
 <!-- ENDIF -->
 <tr>
 	<th colspan="2">{L_TOPICS}</th>
-	<th width="150">{L_AUTHOR}</th>
-	<th width="150">{L_LASTPOST}</th>
+	<th class="tw150px">{L_AUTHOR}</th>
+	<th class="tw150px">{L_LASTPOST}</th>
 	<!-- BEGIN rating_switch -->
 	<th style="max-width: 100px;">{L_RATING}</th>
 	<!-- END rating_switch -->
 </tr>
 <!-- BEGIN topicrow -->
 <tr>
-	<td class="row1h{topicrow.CLASS_NEW} row-forum" width="100%" data-href="{topicrow.U_VIEW_TOPIC}" colspan="2">
+	<td class="row1h{topicrow.CLASS_NEW} row-forum tw100pct" data-href="{topicrow.U_VIEW_TOPIC}" colspan="2">
 		<div class="topic-title-hide-flow"><span class="topiclink{topicrow.CLASS_NEW}">{topicrow.NEWEST_POST_IMG}{topicrow.TOPIC_ATTACHMENT_IMG}{topicrow.TOPIC_TYPE_ICON}<a href="{topicrow.U_VIEW_TOPIC}" class="{topicrow.TOPIC_CLASS}">{topicrow.TOPIC_TITLE}</a></span></div>
 		<!-- BEGIN switch_topic_desc -->
 		<span class="gensmall">&nbsp;{topicrow.switch_topic_desc.TOPIC_DESCRIPTION}</span><br />
@@ -61,7 +61,7 @@
 </tr>
 <!-- IF not S_BOT -->
 <!-- BEGIN switch_viewforum_banner -->
-<tr><td class="row1h-new row-forum" width="100%" colspan="5">{VIEWFORUM_BANNER_CODE}</td></tr>
+<tr><td class="row1h-new row-forum tw100pct" colspan="5">{VIEWFORUM_BANNER_CODE}</td></tr>
 <!-- END switch_viewforum_banner -->
 <!-- ENDIF -->
 <!-- END topicrow -->
@@ -72,14 +72,14 @@
 <tr><td class="row3 row-center" colspan="5">{VIEWFORUM_BANNER_BOTTOM}</td></tr>
 <!-- ENDIF -->
 <tr>
-	<td class="cat" valign="middle" colspan="5">
+	<td class="cat tvalignm" colspan="5">
 		<span class="genmed" style="float: right; text-align: right; vertical-align: middle; padding-right: 5px; padding-top: 5px;"><!-- IF S_TIMEZONE -->{S_TIMEZONE}<!-- ELSE -->&nbsp;<!-- ENDIF --></span>
 		<div class="gensmall" style="text-align: left; padding-left: 5px; padding-top: 5px;">{L_DISPLAY_TOPICS}:&nbsp;{S_SELECT_TOPIC_DAYS}&nbsp;<input type="submit" class="liteoption jumpbox" value="{L_GO}" name="submit" /></div>
 	</td>
 </tr>
 <!-- IF S_SHOW_ALPHA_BAR -->
 <tr>
-	<td class="cat" align="center" valign="middle" colspan="5">
+	<td class="cat tdalignc tvalignm" colspan="5">
 	<span class="gensmall">{L_SORT_TOPICS}:{DIVIDER}<a href="{U_NEWEST}">{L_SORT_TOPICS_NEWEST}</a>{DIVIDER}<a href="{U_OLDEST}">{L_SORT_TOPICS_OLDEST}</a>{DIVIDER}<a href="{U_AZ}">A-Z</a>{DIVIDER}<a href="{U_ZA}" >Z-A</a>{DIVIDER}<!-- BEGIN alphabetical_sort --><a href="{alphabetical_sort.U_LETTER}" >{alphabetical_sort.LETTER}</a>{alphabetical_sort.DIVIDER}<!-- END alphabetical_sort -->{DIVIDER}</span>
 	</td>
 </tr>
@@ -87,10 +87,10 @@
 </table>{IMG_TFL}{IMG_TFC}{IMG_TFR}
 </form>
 
-<table width="100%" cellspacing="0" cellpadding="0">
+<table>
 <tr>
-	<td align="left" valign="top" nowrap="nowrap"><div class="buttons"><!-- IF IS_LOCKED --><div class="locked-button"><!-- ELSE --><div class="newtopic-button"><!-- ENDIF --><a href="{U_POST_NEW_TOPIC}"><span>{L_POST_NEW_TOPIC}</span></a></div></div><br clear="all" /></td>
-	<td width="40%" align="right" valign="top" nowrap="nowrap"><span class="pagination">{PAGINATION}</span><br /></td>
+	<td class="tdnw"><div class="buttons"><!-- IF IS_LOCKED --><div class="locked-button"><!-- ELSE --><div class="newtopic-button"><!-- ENDIF --><a href="{U_POST_NEW_TOPIC}"><span>{L_POST_NEW_TOPIC}</span></a></div></div><br class="clear" /></td>
+	<td class="tw40pct tdalignr tdnw"><span class="pagination">{PAGINATION}</span><br /></td>
 </tr>
 </table>
 
