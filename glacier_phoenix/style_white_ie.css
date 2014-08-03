@@ -1,0 +1,15 @@
+#wrapper, .top-header, .top-menu, .page-footer, .roundedbox, .roundedbox h3 {
+	/*behavior: url('./templates/common/border-radius.htc');*/
+}
+
+.forumline, .roundedbox, div.roundedbox div.inside {
+	margin-bottom: 0px !important;
+}
+
+.roundedbox {
+	/*border-width: 0px !important;*/
+}
+
+div#horiz-menu {
+	/*position: relative !important;*/
+}

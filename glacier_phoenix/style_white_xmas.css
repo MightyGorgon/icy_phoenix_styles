@@ -1,0 +1,21 @@
+html {
+	background-color: #b61324 !important;
+	background-image: none !important;
+}
+
+body {
+	background-color: #b61324 !important;
+	background-image: url('./images/white/xmas/bg_body.jpg') !important;
+	background-repeat: top left repeat-x !important;
+}
+
+#wrapper {
+	background-color: transparent !important;
+	background-image: url('./images/white/bg_transparent.png') !important;
+	background-repeat: repeat !important;
+}
+
+.roundedbox h3 {
+	background-image: url('./images/white/grad_white.png') !important;
+}
+
