@@ -50,9 +50,9 @@
 <div class="roundedbox fill-gradient" style="padding-top: 6px;"><table class="forumlinenb">
 <tr>
 	<td class="row-post-author">
-		<span class="post-name"><a id="p{postrow.U_POST_ID}"></a>{postrow.POSTER_ONLINE_STATUS_IMG}&nbsp;{postrow.POSTER_NAME}&nbsp;{postrow.POSTER_GENDER}</span><br />
-		<!-- IF postrow.POSTER_FULL_NAME --><span class="post-details">{postrow.POSTER_FULL_NAME}</span><br /><!-- ENDIF -->
-		<!-- IF not S_BOT -->
+		<span class="post-name"><a id="p{postrow.U_POST_ID}"></a><!-- IF not postrow.S_THIS_POSTER_MASK --><a href="{postrow.U_USER_ONLINE_STATUS}"><img src="<!-- IF postrow.S_USER_ONLINE -->{postrow.IMG_USER_ONLINE}<!-- ELSEIF postrow.S_USER_HIDDEN -->{postrow.IMG_USER_HIDDEN}<!-- ELSE -->{postrow.IMG_USER_OFFLINE}<!-- ENDIF -->" alt="{postrow.L_POSTER_ONLINE_STATUS}" title="{postrow.L_POSTER_ONLINE_STATUS}" /></a><!-- ENDIF -->&nbsp;{postrow.POSTER_NAME}&nbsp;<!-- IF postrow.S_GENDER_MALE and not postrow.S_THIS_POSTER_MASK --><a href="#"><img src="{postrow.IMG_GENDER_MALE}" alt="{postrow.L_GENDER_MALE}" title="{postrow.L_GENDER_MALE}" /></a><!-- ELSEIF postrow.S_GENDER_FEMALE and not postrow.S_THIS_POSTER_MASK --><a href="#"><img src="{postrow.IMG_GENDER_FEMALE}" alt="{postrow.L_GENDER_FEMALE}" title="{postrow.L_GENDER_FEMALE}" /></a><!-- ENDIF --></span><br />
+		<!-- IF postrow.POSTER_FULL_NAME and not postrow.S_THIS_POSTER_MASK --><span class="post-details">{postrow.POSTER_FULL_NAME}</span><br /><!-- ENDIF -->
+		<!-- IF not S_BOT and not postrow.S_THIS_POSTER_MASK -->
 		<div class="center-block-text">
 			<div class="post-rank">
 			<b>
@@ -77,12 +77,13 @@
 
 		<!-- ENDIF -->
 		<!-- BEGIN switch_showavatars -->
-		<span class="post-images"><a href="javascript:quotename(%27[b]{postrow.POSTER_NAME_QR}[/b],%27);">{postrow.POSTER_AVATAR}</a></span>
+		<span class="post-images"><a href="<!-- IF postrow.POSTER_ID and not S_BOT and not postrow.S_THIS_POSTER_MASK -->javascript:quotename(%27[user]{postrow.POSTER_ID}[/user],%27);<!-- ELSE -->#<!-- ENDIF -->">{postrow.POSTER_AVATAR}</a></span>
 		<!-- END switch_showavatars -->
 		<div class="post-details">
+			<!-- IF not postrow.S_THIS_POSTER_MASK -->
+			<!-- IF not S_BOT -->
 			<!-- {postrow.POSTER_NO}<br /> -->
 			{postrow.POSTER_JOINED}<br />
-			<!-- IF not S_BOT -->
 			{postrow.POSTER_POSTS}<br />
 			<!-- ENDIF -->
 			{postrow.POSTER_AGE}
@@ -100,10 +101,11 @@
 			{postrow.author_profile.AUTHOR_VAL}<br />
 			<!-- END author_profile -->
 			<div class="center-block-text">&nbsp;{postrow.HAPPY_BIRTHDAY}</div>
+			<!-- ENDIF -->
 		</div>
 		&nbsp;<br />
 	</td>
-	<!-- <td class="row-post" width="100%" height="100%" style="overflow: hidden;"> -->
+	<!-- <td class="row-post" style="overflow: hidden;"> -->
 	<td class="row-post th100pct">
 		<div class="post-buttons-top post-buttons">
 			<!-- IF not S_BOT -->
@@ -139,6 +141,7 @@
 			{postrow.ATTACHMENTS}
 		</div>
 		<div class="align-spacer">&nbsp;</div>
+		<!-- IF not postrow.S_THIS_POSTER_MASK -->
 		<div class="post-text post-text-hide-flow">
 			<br /><br /><br />
 			<!-- BEGIN above_sig -->
@@ -151,6 +154,7 @@
 			<span class="post-details"><br />{postrow.below_sig.BELOW_VAL}</span>
 			<!-- END below_sig -->
 		</div>
+		<!-- ENDIF -->
 		<div class="align-spacer">&nbsp;</div>
 		<!-- IF S_EDIT_NOTES -->
 		<!-- IF postrow.EDITED_MESSAGE -->
@@ -189,9 +193,9 @@
 	<td class="row-post-buttons post-buttons">
 		<div style="text-align: right; vertical-align: middle;">
 			<div class="extra-top-padding" style="position: relative; float: left; text-align: left; vertical-align: middle;">
-				{postrow.PROFILE_IMG}{postrow.PM_IMG}{postrow.EMAIL_IMG}{postrow.WWW_IMG}{postrow.ALBUM_IMG}&nbsp;
+				<!-- IF not postrow.S_THIS_POSTER_MASK -->{postrow.PROFILE_IMG}{postrow.PM_IMG}{postrow.EMAIL_IMG}{postrow.WWW_IMG}{postrow.ALBUM_IMG}<!-- ENDIF -->&nbsp;
 			</div>
-			<!-- IF not S_BOT -->
+			<!-- IF not S_BOT and not postrow.S_THIS_POSTER_MASK -->
 			<!-- BEGIN switch_quick_quote -->
 			<a href="javascript:addquote(%27{postrow.U_POST_ID}%27,%27quote%27,true,false);"><img src="{IMG_QUICK_QUOTE}" alt="{L_QUICK_QUOTE}" title="{L_QUICK_QUOTE}" /></a><a href="javascript:addquote(%27{postrow.U_POST_ID}%27,%27ot%27,true,false);"><img src="{IMG_OFFTOPIC}" alt="{L_OFFTOPIC}" title="{L_OFFTOPIC}" /></a>
 			<!-- END switch_quick_quote -->

@@ -134,13 +134,13 @@
 		<dl class="postprofile">
 			<dt>
 				<!-- BEGIN switch_showavatars -->
-				<a href="javascript:quotename(%27[b]{postrow.POSTER_NAME_QR}[/b],%27);">{postrow.POSTER_AVATAR}</a><br />
+				<a href="<!-- IF postrow.POSTER_ID and not S_BOT and not postrow.S_THIS_POSTER_MASK -->javascript:quotename(%27[user]{postrow.POSTER_ID}[/user],%27);<!-- ELSE -->#<!-- ENDIF -->">{postrow.POSTER_AVATAR}</a><br />
 				<!-- END switch_showavatars -->
-				{postrow.POSTER_FROM_FLAG}&nbsp;{postrow.POSTER_NAME}&nbsp;{postrow.POSTER_GENDER}
-				<!-- IF postrow.POSTER_FULL_NAME --><br />{postrow.POSTER_FULL_NAME}<!-- ENDIF -->
+				{postrow.POSTER_FROM_FLAG}&nbsp;{postrow.POSTER_NAME}&nbsp;<!-- IF postrow.S_GENDER_MALE and not postrow.S_THIS_POSTER_MASK --><a href="#"><img src="{postrow.IMG_GENDER_MALE}" alt="{postrow.L_GENDER_MALE}" title="{postrow.L_GENDER_MALE}" /></a><!-- ELSEIF postrow.S_GENDER_FEMALE and not postrow.S_THIS_POSTER_MASK --><a href="#"><img src="{postrow.IMG_GENDER_FEMALE}" alt="{postrow.L_GENDER_FEMALE}" title="{postrow.L_GENDER_FEMALE}" /></a><!-- ENDIF -->
+				<!-- IF postrow.POSTER_FULL_NAME and not postrow.S_THIS_POSTER_MASK --><br />{postrow.POSTER_FULL_NAME}<!-- ENDIF -->
 			</dt>
 			<dd>
-			<!-- IF not S_BOT -->
+			<!-- IF not S_BOT and not postrow.S_THIS_POSTER_MASK -->
 			{postrow.USER_RANK_01}{postrow.USER_RANK_01_IMG}
 			{postrow.USER_RANK_02}{postrow.USER_RANK_02_IMG}
 			{postrow.USER_RANK_03}{postrow.USER_RANK_03_IMG}
@@ -151,6 +151,7 @@
 			<!-- ENDIF -->
 			</dd>
 			<dd>&nbsp;</dd>
+			<!-- IF not postrow.S_THIS_POSTER_MASK -->
 			<!-- IF not S_BOT --><dd>{postrow.CARD_IMG}</dd><!-- ENDIF -->
 			<!-- IF postrow.POSTER_AGE --><dd>{postrow.POSTER_AGE}</dd><!-- ENDIF -->
 			<dd>{postrow.POSTER_JOINED}</dd>
@@ -169,14 +170,17 @@
 			<dd>{postrow.author_profile.AUTHOR_VAL}</dd>
 			<!-- END author_profile -->
 			<!-- IF postrow.HAPPY_BIRTHDAY --><dd>{postrow.HAPPY_BIRTHDAY}</dd><!-- ENDIF -->
+			<!-- ENDIF -->
 			<dd>
 				<ul class="profile-icons">
-					<!-- IF not S_BOT -->
+					<!-- IF not S_BOT and not postrow.S_THIS_POSTER_MASK -->
 					<li class="{postrow.POSTER_ONLINE_STATUS_CLASS}-icon"><a href="{postrow.U_POSTER_ONLINE_STATUS}" title="{postrow.L_POSTER_ONLINE_STATUS}"><span>{postrow.L_POSTER_ONLINE_STATUS}</span></a></li>
 					<!-- ENDIF -->
+					<!-- IF not postrow.S_THIS_POSTER_MASK -->
 					<li class="profile-icon"><a href="{postrow.U_PROFILE}" title="{L_USER_PROFILE}"><span>{L_USER_PROFILE}</span></a></li>
 					<li class="pm-icon"><a href="{postrow.U_PM}" title="{L_PM}"><span>{L_PM}</span></a></li>
-					<!-- IF not S_BOT -->
+					<!-- ENDIF -->
+					<!-- IF not S_BOT and not postrow.S_THIS_POSTER_MASK -->
 					<!-- IF postrow.U_EMAIL --><li class="email-icon"><a href="{postrow.U_EMAIL}" title="{L_USER_EMAIL}"><span>{L_USER_EMAIL}</span></a></li><!-- ENDIF -->
 					<!-- IF postrow.U_WWW --><li class="web-icon"><a href="{postrow.U_WWW}" title="{L_USER_WWW}" target="_blank"><span>{L_USER_WWW}</span></a></li><!-- ENDIF -->
 					<!-- IF postrow.U_ALBUM --><li class="album-icon"><a href="{postrow.U_ALBUM}" title="{L_ALBUM}"><span>{L_ALBUM}</span></a></li><!-- ENDIF -->
@@ -191,7 +195,7 @@
 		<!-- ENDIF -->
 		<div style="float: right; vertical-align: bottom; text-align: right;">
 		<ul class="profile-icons">
-		<!-- IF not S_BOT -->
+		<!-- IF not S_BOT and not postrow.S_THIS_POSTER_MASK -->
 		<!-- BEGIN switch_quick_quote -->
 			<li class="quickquote-icon"><a href="javascript:addquote(%27{postrow.U_POST_ID}%27,%27quote%27,true,false);" title="{L_QUICK_QUOTE}"><span>{L_QUICK_QUOTE}</span></a></li>
 			<li class="offtopic-icon"><a href="javascript:addquote(%27{postrow.U_POST_ID}%27,%27ot%27,true,false);" title="{L_OFFTOPIC}"><span>{L_OFFTOPIC}</span></a></li>

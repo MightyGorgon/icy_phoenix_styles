@@ -99,7 +99,7 @@ message[{privmsgs_id}] = " user=\"{RECIPIENT_QQ}\"]{PLAIN_MESSAGE}[/";
 <br class="clear" />
 {IMG_THL}{IMG_THC}<span class="forumlink">{POST_SUBJECT}</span>{IMG_THR}<table class="forumlinenb">
 	<tr>
-		<th class="tw150px">{L_AUTHOR}</th>
+		<th class="tw180px">{L_AUTHOR}</th>
 		<th>{L_MESSAGE}</th>
 	</tr>
 	<tr>
