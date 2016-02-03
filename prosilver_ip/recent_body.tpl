@@ -1,5 +1,6 @@
 <!-- INCLUDE overall_header.tpl -->
 
+<!-- IF not IS_USER_RECENT -->
 {IMG_TBL}<div class="forumline nav-div" style="background: none; border-width: 0px;">
 	<p class="nav-header" style="background: none; border-width: 0px;"><a href="#" class="nav-current">{STATUS}</a></p>
 	<div class="nav-transparent gensmall">
@@ -15,6 +16,7 @@
 		</form>
 	</div>
 </div>{IMG_TBR}
+<!-- ENDIF -->
 
 {IMG_THL}{IMG_THC}<span class="forumlink">{L_RECENT_TITLE}</span>{IMG_THR}<table class="forumlinenb">
 <tr>

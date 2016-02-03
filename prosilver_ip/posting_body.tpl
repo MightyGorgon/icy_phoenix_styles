@@ -25,6 +25,32 @@ function attach_rules(forum_id)
 // ]]>
 </script>
 
+<!-- IF S_JQUERY_TOPIC_TAGS -->
+<script type="text/javascript">
+// <![CDATA[
+	$(function() {
+		$('input.tag').tagedit({
+			texts: { // some texts
+				removeLinkTitle: '{L_TAGS_REMOVE_ITEM}',
+				saveEditLinkTitle: '{L_TAGS_EDIT_ITEM}',
+				deleteLinkTitle: '{L_TAGS_DELETE_ITEM}',
+				deleteConfirmation: '{L_TAGS_DELETE_CONFIRM}',
+				deletedElementTitle: '{L_TAGS_DELETED_ITEM}',
+				breakEditLinkTitle: '{L_TAGS_BREAK_EDIT}'
+			},
+			autocompleteURL: 'ajax.php?mode=tags_search_json&json=1&sid={S_SID}',
+			//autocompleteOptions: {minLength: 0},
+			// put a classname here if the wrapper ul shoud receive a special class
+			//additionalListClass: 'post',
+			// return, comma, space, period, semicolon
+			//breakKeyCodes: [ 13, 44, 32, 46, 59 ]
+		});
+		
+	});
+// ]]>
+</script>
+<!-- ENDIF -->
+
 <!-- BEGIN switch_privmsg -->
 {CPL_MENU_OUTPUT}
 <table>
@@ -161,15 +187,29 @@ function attach_rules(forum_id)
 <!-- END switch_edit -->
 <!-- IF S_POSTING_TOPIC -->
 <!-- IF S_ADMIN or S_MOD -->
+<!--
 <tr>
 	<td class="row1"><span class="gen"><b>{L_CLEAN_NAME}</b></span><br /><span class="gensmall">{L_CLEAN_NAME_EXPLAIN}</span></td>
 	<td class="row2"><span class="gen"><input type="text" name="topic_title_clean" size="45" maxlength="240" style="width: 98%;" tabindex="6" class="post" value="{TOPIC_TITLE_CLEAN}" /></span></td>
 </tr>
+-->
 <!-- ENDIF -->
 <!-- IF S_TOPIC_TAGS -->
 <tr>
 	<td class="row1"><span class="gen"><b>{L_TOPIC_TAGS}</b></span><br /><span class="gensmall">{L_TOPIC_TAGS_EXPLAIN}</span></td>
-	<td class="row2"><span class="gen"><input type="text" name="topic_tags" size="45" maxlength="240" style="width: 98%;" tabindex="7" class="post" value="{TOPIC_TAGS}" /></span></td>
+	<!-- <td class="row2"><span class="gen"><input type="text" id="topic_tags" name="topic_tags" size="45" maxlength="240" style="width: 98%;" tabindex="8" class="post" value="{TOPIC_TAGS}" /></span></td> -->
+	<td class="row2">
+		<span class="gen">
+			<!-- IF S_JQUERY_TOPIC_TAGS -->
+			<!-- BEGIN ttag -->
+			<input type="text" name="ttag[]" size="45" maxlength="240" style="width: 98%;" class="tag" value="{ttag.TTAG}" />
+			<!-- END ttag -->
+			<input type="text" name="ttag[]" size="45" maxlength="240" style="width: 98%;" tabindex="8" class="tag" value="" />
+			<!-- ELSE -->
+			<input type="text" name="topic_tags" size="45" maxlength="240" style="width: 98%;" tabindex="8" class="post" value="{TOPIC_TAGS}" />
+			<!-- ENDIF -->
+		</span>
+	</td>
 </tr>
 <!-- ENDIF -->
 <!-- ENDIF -->
