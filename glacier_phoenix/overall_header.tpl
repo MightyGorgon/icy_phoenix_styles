@@ -8,13 +8,14 @@
 <title>{PAGE_TITLE}</title>
 
 <link rel="shortcut icon" href="{FULL_SITE_PATH}images/favicon.ico" />
-<link rel="stylesheet" href="{FULL_SITE_PATH}{T_TPL_PATH}style_{CSS_COLOR}.css" type="text/css" />
-<link rel="stylesheet" href="{FULL_SITE_PATH}{T_COMMON_TPL_PATH}ip_sprites_famfamfam.css" type="text/css" />
+<link rel="stylesheet" href="{FULL_SITE_PATH}{T_TPL_PATH}style_{CSS_COLOR}.css?assets_version={T_ASSETS_VERSION}" type="text/css" />
+<link rel="stylesheet" href="{FULL_SITE_PATH}{T_COMMON_TPL_PATH}ip_sprites_famfamfam.css?assets_version={T_ASSETS_VERSION}" type="text/css" />
+<link rel="stylesheet" href="{FULL_SITE_PATH}{T_COMMON_TPL_PATH}font_awesome_compressed.css?assets_version={T_ASSETS_VERSION}" type="text/css" />
 <!-- BEGIN css_style_include -->
-<link rel="stylesheet" href="{FULL_SITE_PATH}{T_TPL_PATH}{css_style_include.CSS_FILE}" type="text/css" />
+<link rel="stylesheet" href="{FULL_SITE_PATH}{T_TPL_PATH}{css_style_include.CSS_FILE}?assets_version={T_ASSETS_VERSION}" type="text/css" />
 <!-- END css_style_include -->
 <!-- BEGIN css_include -->
-<link rel="stylesheet" href="{FULL_SITE_PATH}{T_COMMON_TPL_PATH}{css_include.CSS_FILE}" type="text/css" />
+<link rel="stylesheet" href="{FULL_SITE_PATH}{T_COMMON_TPL_PATH}{css_include.CSS_FILE}?assets_version={T_ASSETS_VERSION}" type="text/css" />
 <!-- END css_include -->
 
 <!-- This goes first, so that the other scripts can be 'jQuerized' -->
@@ -189,7 +190,7 @@ var ajax_page_charset = '{S_CONTENT_ENCODING}';
 <body>
 
 <div id="global-wrapper">
-<span><a id="top">&nbsp;</a></span>
+<span class="topanchor"><a id="top">&nbsp;</a></span>
 {TOP_HTML_BLOCK}
 <!-- IF GH_BLOCK --><!-- BEGIN gheader_blocks_row -->{gheader_blocks_row.CMS_BLOCK}<!-- END gheader_blocks_row --><!-- ENDIF -->
 <!-- IF PROFILE_VIEW --><script type="text/javascript">window.open('{U_PROFILE_VIEW}','_blank','height=800,width=250,resizable=yes');</script><!-- ENDIF -->
