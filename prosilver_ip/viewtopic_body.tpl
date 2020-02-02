@@ -56,7 +56,7 @@
 {POLL_DISPLAY}
 {REG_DISPLAY}
 <!-- BEGIN postrow -->
-<div class="post-msg {postrow.ROW_CLASS} post-msg-bg-{postrow.ROW_CLASS}" style="border-width: 0px;">
+<div data-post-id="{postrow.U_POST_ID}" class="post-msg {postrow.ROW_CLASS} post-msg-bg-{postrow.ROW_CLASS}" style="border-width: 0px;">
 	<div class="inner"><span class="corners-top"><span></span></span>
 
 		<div class="postbody" style="height: 100%;">
@@ -336,3 +336,7 @@ if(GetCookie(tmp) == '2')
 	</td>
 </tr>
 </table>
+
+<!-- IF IS_LAST_PAGE -->
+<!-- INCLUDE viewtopic_inc_ajax.tpl -->
+<!-- ENDIF -->

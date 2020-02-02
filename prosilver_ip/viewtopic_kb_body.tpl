@@ -28,7 +28,7 @@ function open_postreview(ref)
 <!-- ENDIF -->
 <tr><th colspan="2">{L_ARTICLE}</th></tr>
 <!-- BEGIN postrow -->
-<tr>
+<tr data-post-id="{postrow.U_POST_ID}">
 	<td class="row-post-buttons post-buttons" colspan="2">
 		<div style="float: right;">
 		<ul class="profile-icons">
@@ -54,7 +54,7 @@ function open_postreview(ref)
 		<div class="post-subject {postrow.UNREAD_COLOR}"><a href="{postrow.U_MINI_POST}"><img src="{postrow.MINI_POST_IMG}" alt="{postrow.L_MINI_POST_ALT}" title="{postrow.L_MINI_POST_ALT}" /></a> {postrow.POST_SUBJECT}&nbsp;</div>
 	</td>
 </tr>
-<tr>
+<tr data-post-id="{postrow.U_POST_ID}">
 	<!-- <td class="row-post-author"></td> -->
 	<td class="row-post th100pct" colspan="2">
 		&nbsp;
@@ -69,7 +69,7 @@ function open_postreview(ref)
 		<!-- ENDIF -->
 	</td>
 </tr>
-<tr>
+<tr data-post-id="{postrow.U_POST_ID}">
 	<td class="row-post-buttons post-buttons" colspan="2">
 		<div style="float:right;">
 		<ul class="profile-icons">
@@ -83,7 +83,7 @@ function open_postreview(ref)
 		<span class="gensmall">&nbsp;{postrow.POSTER_NAME}&nbsp;[&nbsp;{postrow.POST_DATE}&nbsp;]</span>
 	</td>
 </tr>
-<tr><td class="spaceRow" colspan="2"><img src="{SPACER}" width="1" height="3" alt="" /></td></tr>
+<tr data-post-id="{postrow.U_POST_ID}"><td class="spaceRow" colspan="2"><img src="{SPACER}" width="1" height="3" alt="" /></td></tr>
 <!-- IF not S_BOT -->
 <!-- BEGIN switch_viewtopic_banner -->
 <tr>
@@ -190,3 +190,7 @@ if(GetCookie(tmp) == '2')
 	</td>
 </tr>
 </table>
+
+<!-- IF IS_LAST_PAGE -->
+<!-- INCLUDE viewtopic_inc_ajax.tpl -->
+<!-- ENDIF -->

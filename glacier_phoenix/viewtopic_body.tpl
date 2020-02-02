@@ -48,7 +48,7 @@
 
 <!-- BEGIN postrow -->
 <div class="roundedbox fill-gradient" style="padding-top: 6px;"><table class="forumlinenb">
-<tr>
+<tr data-post-id="{postrow.U_POST_ID}">
 	<td class="row-post-author">
 		<span class="post-name"><a id="p{postrow.U_POST_ID}"></a><!-- IF not postrow.S_THIS_POSTER_MASK --><a href="{postrow.U_USER_ONLINE_STATUS}"><img src="<!-- IF postrow.S_USER_ONLINE -->{postrow.IMG_USER_ONLINE}<!-- ELSEIF postrow.S_USER_HIDDEN -->{postrow.IMG_USER_HIDDEN}<!-- ELSE -->{postrow.IMG_USER_OFFLINE}<!-- ENDIF -->" alt="{postrow.L_POSTER_ONLINE_STATUS}" title="{postrow.L_POSTER_ONLINE_STATUS}" /></a><!-- ENDIF -->&nbsp;{postrow.POSTER_NAME}&nbsp;<!-- IF postrow.S_GENDER_MALE and not postrow.S_THIS_POSTER_MASK --><a href="#"><img src="{postrow.IMG_GENDER_MALE}" alt="{postrow.L_GENDER_MALE}" title="{postrow.L_GENDER_MALE}" /></a><!-- ELSEIF postrow.S_GENDER_FEMALE and not postrow.S_THIS_POSTER_MASK --><a href="#"><img src="{postrow.IMG_GENDER_FEMALE}" alt="{postrow.L_GENDER_FEMALE}" title="{postrow.L_GENDER_FEMALE}" /></a><!-- ENDIF --></span><br />
 		<!-- IF postrow.POSTER_FULL_NAME and not postrow.S_THIS_POSTER_MASK --><span class="post-details">{postrow.POSTER_FULL_NAME}</span><br /><!-- ENDIF -->
@@ -164,9 +164,9 @@
 	</td>
 </tr>
 <!-- IF S_POSTS_LIKES -->
-<tr><td class="row-post-date tdalignc tvalignm" colspan="2"><span class="gensmall"><span id="like_s_p{postrow.U_POST_ID}"><!-- IF postrow.POST_LIKE_TEXT -->{postrow.POST_LIKE_TEXT}&nbsp;&bull;<!-- ENDIF -->&nbsp;</span><!-- IF S_LOGGED_IN and not postrow.S_OWN_POST --><a href="#" id="like_a_p{postrow.U_POST_ID}" style="text-decoration: none;" onclick="post_like_ajax({postrow.U_TOPIC_ID}, {postrow.U_POST_ID}); return false;"><!-- IF postrow.READER_LIKES -->{L_UNLIKE}<!-- ELSE -->{L_LIKE}<!-- ENDIF --></a>&nbsp;&bull;<!-- ENDIF -->&nbsp;{postrow.SINGLE_POST_SHARE}</span></td></tr>
+<tr data-post-id="{postrow.U_POST_ID}"><td class="row-post-date tdalignc tvalignm" colspan="2"><span class="gensmall"><span id="like_s_p{postrow.U_POST_ID}"><!-- IF postrow.POST_LIKE_TEXT -->{postrow.POST_LIKE_TEXT}&nbsp;&bull;<!-- ENDIF -->&nbsp;</span><!-- IF S_LOGGED_IN and not postrow.S_OWN_POST --><a href="#" id="like_a_p{postrow.U_POST_ID}" style="text-decoration: none;" onclick="post_like_ajax({postrow.U_TOPIC_ID}, {postrow.U_POST_ID}); return false;"><!-- IF postrow.READER_LIKES -->{L_UNLIKE}<!-- ELSE -->{L_LIKE}<!-- ENDIF --></a>&nbsp;&bull;<!-- ENDIF -->&nbsp;{postrow.SINGLE_POST_SHARE}</span></td></tr>
 <!-- ENDIF -->
-<tr>
+<tr data-post-id="{postrow.U_POST_ID}">
 	<td class="row-post-date"><div style="text-align: center;"><b>{postrow.SINGLE_POST}</b>&nbsp;&nbsp;<!-- IF S_ADMIN -->{postrow.POST_EDIT_STRING_SHORT}<!-- ELSE -->{postrow.POST_DATE}<!-- ENDIF --></div></td>
 	<td class="row-post-buttons post-buttons">
 		<div style="text-align: right; vertical-align: middle;">
@@ -326,3 +326,7 @@ if(GetCookie(tmp) == '2')
 	</td>
 </tr>
 </table>
+
+<!-- IF IS_LAST_PAGE -->
+<!-- INCLUDE viewtopic_inc_ajax.tpl -->
+<!-- ENDIF -->
